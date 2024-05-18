@@ -1,0 +1,148 @@
+{
+  "provincias": [
+    {
+      "nombre": "Misiones",
+      "latitud": -26.8753965086829,
+      "longitud": -54.6516966230371,
+      "limitaCon": ["Corrientes"]
+    },
+    {
+      "nombre": "San Luis",
+      "latitud": -33.7577257449137,
+      "longitud": -66.0281298195836,
+      "limitaCon": ["San Juan", "La Pampa", "Córdoba","La Rioja","Mendoza"]
+    },
+    {
+      "nombre": "San Juan",
+      "latitud": -30.8653679979618,
+      "longitud": -68.8894908486844,
+      "limitaCon": ["Mendoza", "La Rioja", "San Luis"]
+    },
+    {
+      "nombre": "Entre Ríos",
+      "latitud": -32.0588735436448,
+      "longitud": -59.2014475514635,
+      "limitaCon": ["Buenos Aires", "Santa Fe", "Corrientes"]
+    },
+    {
+      "nombre": "Santa Cruz",
+      "latitud": -48.8154851827063,
+      "longitud": -69.9557621671973,
+      "limitaCon": ["Chubut", "Tierra del Fuego"]
+    },
+    {
+      "nombre": "Río Negro",
+      "latitud": -40.4057957178801,
+      "longitud": -67.229329893694,
+      "limitaCon": ["Neuquén", "Chubut","La Pampa","Buenos Aires"]
+    },
+    {
+      "nombre": "Chubut",
+      "latitud": -43.7886233529878,
+      "longitud": -68.5267593943345,
+      "limitaCon": ["Santa Cruz", "Río Negro"]
+    },
+    {
+      "nombre": "Córdoba",
+      "latitud": -32.142932663607,
+      "longitud": -63.8017532741662,
+      "limitaCon": ["San Luis", "La Rioja", "Santiago del Estero", "Buenos Aires", "Santa Fe","Catamarca","La Pampa"]
+    },
+    {
+      "nombre": "Mendoza",
+      "latitud": -34.6298873058957,
+      "longitud": -68.5831228183798,
+      "limitaCon": ["San Juan", "La Pampa", "San Luis","Neuquén"]
+    },
+    {
+      "nombre": "La Rioja",
+      "latitud": -29.685776298315,
+      "longitud": -67.1817359694432,
+      "limitaCon": ["San Juan", "Catamarca", "Córdoba","San Luis"]
+    },
+    {
+      "nombre": "Catamarca",
+      "latitud": -27.3358332810217,
+      "longitud": -66.9476824299928,
+      "limitaCon": ["La Rioja", "Tucumán", "Santiago del Estero","Salta","Córdoba"]
+    },
+    {
+      "nombre": "La Pampa",
+      "latitud": -37.1315537735949,
+      "longitud": -65.4466546606951,
+      "limitaCon": ["San Luis", "Mendoza", "Buenos Aires", "Río Negro","Córdoba","Neuquén"]
+    },
+    {
+      "nombre": "Santiago del Estero",
+      "latitud": -27.7824116550944,
+      "longitud": -63.2523866568588,
+      "limitaCon": ["Salta", "Tucumán", "Catamarca", "Córdoba", "Santa Fe", "Chaco"]
+    },
+    {
+      "nombre": "Corrientes",
+      "latitud": -28.7743047046407,
+      "longitud": -57.8012191977913,
+      "limitaCon": ["Misiones", "Entre Ríos", "Chaco","Santa Fe"]
+    },
+    {
+      "nombre": "Santa Fe",
+      "latitud": -30.7069271588117,
+      "longitud": -60.9498369430241,
+      "limitaCon": ["Santiago del Estero", "Córdoba", "Buenos Aires", "Entre Ríos","Corrientes","Chaco"]
+    },
+    {
+      "nombre": "Tucumán",
+      "latitud": -26.9478001830786,
+      "longitud": -65.3647579441481,
+      "limitaCon": ["Salta", "Catamarca", "Santiago del Estero"]
+    },
+    {
+      "nombre": "Neuquén",
+      "latitud": -38.6417575824599,
+      "longitud": -70.1185705180601,
+      "limitaCon": ["Río Negro", "Mendoza","La Pampa"]
+    },
+    {
+      "nombre": "Salta",
+      "latitud": -24.776114,
+      "longitud": -65.413124,
+      "limitaCon": ["Jujuy", "Tucumán", "Catamarca","Formosa","Chaco","Santiago del Estero"]
+    },
+    {
+      "nombre": "Chaco",
+      "latitud": -26.3864309061226,
+      "longitud": -60.7658307438603,
+      "limitaCon": ["Formosa", "Corrientes", "Santa Fe", "Santiago del Estero","Salta"]
+    },
+    {
+      "nombre": "Formosa",
+      "latitud": -24.894972594871,
+      "longitud": -59.9324405800872,
+      "limitaCon": ["Chaco", "Salta"]
+    },
+    {
+      "nombre": "Jujuy",
+      "latitud": -23.3200784211351,
+      "longitud": -65.7642522180337,
+      "limitaCon": ["Salta"]
+    },
+    {
+      "nombre": "Ciudad Autónoma de Buenos Aires",
+      "latitud": -34.6144934119689,
+      "longitud": -58.4458563545429,
+      "limitaCon": ["Buenos Aires"] 
+    },
+    {
+      "nombre": "Buenos Aires",
+      "latitud": -36.6769415180527,
+      "longitud": -60.5588319815719,
+      "limitaCon": ["Ciudad Autónoma de Buenos Aires","Entre Ríos","Santa Fe","Córdoba","La Pampa","Río Negro"]
+    },
+    {
+      "nombre": "Tierra del Fuego",
+      "latitud": -54.353823,
+      "longitud": -67.445796,
+      "limitaCon": ["Santa Cruz"]
+    }
+  ]
+}
