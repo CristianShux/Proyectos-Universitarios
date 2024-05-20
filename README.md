@@ -108,21 +108,27 @@ El trabajo consiste en Amazing, la gigante empresa de comercio electrónico, que
 ## TP Sistemas Operativos y Redes
 
 **Descripción:**
-El proyecto de Sistemas Operativos y Redes aborda el diseño y funcionamiento de sistemas operativos, así como los conceptos básicos de redes de computadoras.
+El proyecto de Sistemas Operativos y Redes se enfoca en el diseño y despliegue de una red empresarial para la compañía Manucho, que se dedica a la fabricación de productos industriales de alta tecnología. La empresa busca establecer una nueva sede en Ciudad XYZ para el "Proyecto Zeta". Este proyecto incluye el diseño de una red bien estructurada y eficiente, que conecte la sede principal con las sucursales en Ciudad A y Ciudad B. Además, se abordarán los conceptos de sistemas operativos, como la gestión de procesos y memoria.
 
 **Tecnologías Utilizadas:**
-- Lenguaje de Programación: C
-- Sistemas Operativos: Linux
+- Cisco Packet Tracer
 
 **Objetivos:**
+- Diseñar una red privada utilizando la dirección IP 192.168.0.0 y aplicar subredes según las necesidades de la compañía.
+- Segmentar la red por departamento para facilitar la administración y minimizar la propagación de tráfico innecesario.
+- Conectar todos los routers de las sucursales utilizando direcciones IP públicas apropiadas para la cantidad de nodos.
+- Implementar el protocolo de enrutamiento RIP versión 2 en toda la red para garantizar la conectividad entre todos los nodos.
 - Entender el funcionamiento de los sistemas operativos.
 - Aprender sobre la gestión de procesos y memoria.
 - Conocer los fundamentos de las redes de computadoras.
 
 **Características Principales:**
-- Implementación de programas de gestión de procesos.
-- Manejo de memoria y sistemas de archivos.
-- Desarrollo de aplicaciones de red básicas.
+-Implementación de una red empresarial que conecta la sede principal en Ciudad XYZ con las sucursales en Ciudad A y Ciudad B.
+-Segmentación de la red por departamentos utilizando subredes.
+-Uso de switches y routers Cisco para la interconexión de las redes locales con la sede principal.
+-Aplicación del protocolo de enrutamiento RIP versión 2.
+-Implementación de programas de gestión de procesos y manejo de memoria en sistemas operativos.
+-Diseño de sistemas de archivos y desarrollo de aplicaciones de red básicas.
 
 **Repositorio:**
 [TP Sistemas Operativos y Redes](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20SISTEMAS%20OPERATIVOS%20Y%20REDES)
