@@ -164,7 +164,9 @@ las acciones del juego. Ademas del funcionamiento normal del 2048, se lleva la c
 ## TP2 Programación III
 
 **Descripción:**
-El segundo trabajo práctico de Programación III se enfoca en la implementación de una aplicación para resolver el problema de diseño de regiones de un país, utilizando conceptos de grafos, algoritmos de optimización, algoritmos de recorrido en grafos, y esta implementado el algoritmo de Prim para crear un arbol generador minimo.
+El segundo trabajo práctico de Programación III se enfoca en la implementación de una aplicación utilizando conceptos de grafos, algoritmos de optimización, algoritmos de recorrido en grafos, y esta implementado el algoritmo de Prim para crear un arbol generador minimo.
+El objetivo del trabajo es implementar una aplicación para resolver el problema de diseño de regiones de un país, similar al planteado por R. Assunção et al. Tenemos un grafo 𝐺
+G que representa las provincias del país, con un vértice por provincia y una arista por cada par de provincias limítrofes. Cada arista tiene un peso que representa la similitud entre las dos provincias (el cálculo de este valor no es parte del trabajo, sino que es un dato proporcionado por el usuario).
 
 **Tecnologías Utilizadas:**
 - Lenguaje de Programación: Java
@@ -175,15 +177,20 @@ El segundo trabajo práctico de Programación III se enfoca en la implementació
 **Objetivos:**
 - Resolver problemas de optimización en la división de un país en regiones utilizando algoritmos de grafos.
 - Desarrollar una interfaz gráfica para cargar, visualizar y analizar el grafo de provincias del país.
-- Implementar un algoritmo que construya un árbol generador mínimo y divida el país en k regiones conexas.
+- Implementar un algoritmo que construya un árbol generador mínimo.
+- Implementar un algoritmo que elimine las k-1 aristas mas pesadas de un grafo.
+- Utilizar y manejar una estructura de datos avanzada como los grafos.
 
 **Características Principales:**
 - Desarrollo de algoritmos de recorrido y búsqueda en grafos.
 - Manejo de excepciones y archivos.
 - Implementación de grafos para representar las provincias del país y sus relaciones limítrofes.
 - Desarrollo de un algoritmo para construir un árbol generador mínimo del grafo.
+- Desarrollo de un algoritmo para eliminar las aristas mas pesadas del grafo.
 - Interfaz gráfica para cargar y visualizar el grafo de provincias, así como las regiones resultantes después de aplicar el algoritmo.
+- Interaccion con el usuario para cargar pesos de las aristas del grafo.
 - Leer un archivo externo con informacion en este caso un JSON con los datos de entrada.
+- El grafo es un tipo generico para mayor flexibilidad y generalizacion.
 
 
 
