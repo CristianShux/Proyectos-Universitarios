@@ -20,7 +20,7 @@ El proyecto de Introducción a la Programación abarca los conceptos básicos de
 - Creación de funciones simples.
 
 **Repositorio:**
-[TP Introducción a la Programación](URL_DEL_REPOSITORIO)
+[TP Introducción a la Programación](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20INTRODUCCION%20A%20LA%20PROGRAMACION)
 
 ## TP Organización del Computador
 
@@ -41,7 +41,7 @@ El proyecto de Organización del Computador se centra en el estudio de la arquit
 - Simulación de instrucciones de bajo nivel.
 
 **Repositorio:**
-[TP Organización del Computador](URL_DEL_REPOSITORIO)
+[TP Organización del Computador](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20ORGANIZACION%20DEL%20COMPUTADOR)
 
 ## TP Programación I
 
