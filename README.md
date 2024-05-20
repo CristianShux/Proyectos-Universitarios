@@ -54,20 +54,27 @@ apareciendo filas de asteroides, la nave debe evitar chocar con los asteroides, 
 ## TP Programación I
 
 **Descripción:**
-El proyecto de Programación I introduce conceptos de programación orientada a objetos (POO), estructuras de datos y algoritmos básicos.
+El proyecto de Programación I introduce conceptos de programación orientada a objetos (POO), estructuras de datos, funciones, bucles y algoritmos basicos.
+El objetivo de este trabajo es desarrollar un video juego en el cual la Astro-MegaShip(nave de combate) elimine la mayor cantidad de Destructores Estelares, sin ser destruida en el intento. La nave, la bala, el asteroide y el enemigo son los objetos principales de este juego implementados en un entorno entregado por la universidad.
 
 **Tecnologías Utilizadas:**
 - Lenguaje de Programación: Java
 
 **Objetivos:**
 - Aprender los principios de la programación orientada a objetos.
-- Implementar estructuras de datos básicas.
-- Resolver problemas utilizando algoritmos eficientes.
+- Implementar estructuras de datos básicas y su manipulación.
+- Desarrollar habilidades para diseñar y programar videojuegos.
+- Mejorar la capacidad para resolver problemas utilizando funciones y algoritmos eficientes.
+- Entender y aplicar conceptos de manejo de eventos y animación en un entorno gráfico.
 
 **Características Principales:**
-- Creación de clases y objetos.
-- Implementación de listas, pilas y colas.
-- Desarrollo de algoritmos de búsqueda y ordenación.
+- Creación de clases y objetos para la nave, enemigos, asteroides y balas.
+- Implementación de lógica de colisiones entre objetos.
+- Manejo de eventos del teclado para controlar la nave y disparar proyectiles.
+- Desarrollo de contadores y estadísticas del juego, como puntaje y vida.
+- Gestión de diferentes rondas y niveles de dificultad a medida que avanza el juego.
+- Uso de archivos multimedia para sonidos y gráficos.
+- Reinicio del juego en caso de ganar o perder.
 
 **Repositorio:**
 [TP Programación I](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20PROGRAMACION%20I)
@@ -75,7 +82,8 @@ El proyecto de Programación I introduce conceptos de programación orientada a 
 ## TP Programación II
 
 **Descripción:**
-El proyecto de Programación II profundiza en los conceptos de POO, estructuras de datos avanzadas y algoritmos más complejos.
+El proyecto de Programación II profundiza y abarca todos los conceptos de POO, estructuras de datos un poco mas avanzadas, algoritmos más complejos y la implementacion de un problema real. No solo se vio practica en codigo sino que tambien antes de la implementacion especificacion de tads necesarios, diagrama de clases y interfaz de la solucion.
+El trabajo consiste en Amazing, la gigante empresa de comercio electrónico, que necesita mejorar su sistema de entrega de paquetes. Nos piden diseñar un sistema que simule el proceso de entrega de paquetes a sus clientes y poder calcular el costo total que debe pagar el cliente.
 
 **Tecnologías Utilizadas:**
 - Lenguaje de Programación: Java
@@ -83,12 +91,16 @@ El proyecto de Programación II profundiza en los conceptos de POO, estructuras 
 **Objetivos:**
 - Perfeccionar las habilidades en programación orientada a objetos.
 - Implementar estructuras de datos avanzadas.
-- Resolver problemas complejos mediante algoritmos eficientes.
+- Especificacion y abstraccion de lo pedido antes de la implementacion.
+- Realizar un buen diseño de aplicacion, si esta bien diseñado estara bien programado.
+- Identificacion del invariante de representacion.
 
 **Características Principales:**
-- Implementación de árboles y grafos.
-- Desarrollo de algoritmos de recorrido y búsqueda en grafos.
-- Manejo de excepciones y archivos.
+- Diagrama de clases utilizando UML
+- Diseño utilizando conceptos de programacion orientada a objetos que incluyen herencia y polimorfismo.
+- Diseño utilizando otros conceptos como sobreescritura, sobrecarga, interfaces, clases y metodos abstractos.
+- Manejo de excepciones.
+- Prueba unitaria J-UNIT
 
 **Repositorio:**
 [TP Programación II](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20PROGRAMACION%20II)
