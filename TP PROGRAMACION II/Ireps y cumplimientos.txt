@@ -1,0 +1,139 @@
+IREPS
+Clase Amazing
+Datos:
+-cuit
+-transportes
+-pedidos
+-numeroDePedido
+-numeroDePaquete
+-facturacionTotalCerrados
+Irep:
+-cuit debe no ser vacio.
+-transportes es un map del objeto Transporte, tampoco pueden tener valores null.
+-pedidos es un map del objeto Pedido, tampoco pueden tener valores null.
+-numeroDePedido debe ser único.
+-numeroDePaquete debe ser único.
+-facturacionTotalCerrados debe ser >= 0, !=null, es igual a la suma del costo de todos los 
+pedidos cerrados
+Clase Pedido
+Datos:
+-Cliente
+-codPedido
+-carritoDePaquetes
+-cerrado
+Irep:
+-Cliente no debe ser nulo, cada pedido debe estar asociado a un cliente valido.
+-codPedido debe ser >= 0 y es único.
+-carritoDePaquetes debe contener objetos de tipo Paquete y no debe ser nula.
+-cerrado debe ser booleano e indica si el pedido está o no cerrado.
+Clase Cliente
+Datos:
+-Nombre
+-Direccion
+-DNI
+4
+Irep: 
+-Nombre no debe estar vacio ni nulo.
+-Dirección no debe estar vacio ni nulo.
+-DNI debe tener 8 numeros.
+Clase Transporte
+Datos:
+-Patente
+-volumenDeCargaActual
+-costoDeViaje
+-volumenMaximoCarga
+-cargaDePaquetes
+Irep:
+-Patente no debe estar vacía ni nulo.
+-costoDeViaje debe ser > =0 
+-volumenMaximoCarga debe ser > =0 y además debe ser mayor o igual a la suma del 
+volumen de los paquetes cargados. Menos o igual que el volumenDeCargaActual.
+-volumenDeCargaActual debe mantenerse entre 0 y el volumenMaximoCarga. También 
+es igual al volumen de los paquetes cargados hasta el momento.
+-cargaDePaquetes no debe ser nula y contiene objetos de tipo Paquete
+Clase Camión
+Datos:
+-valorAdicional
+Irep:
+-valorAdicional >=0 y su valor se multiplica por la cantidad de paquetes del transporte.
+-Paquetes solo lleva paquetes especiales y con volumen >2000
+Clase Automovil
+Datos:
+-limiteMaxPaquetes
+Irep:
+-limiteMaxPaquetes debe ser > =0, no puede superar su límite y es mayor a la cantidad 
+de paquetes cargados.
+-Paquetes deben ser ordinarios y con volumen <2000
+Clase Utilitario
+Datos:
+5
+-valorExtra
+Irep:
+-valorExtra debe ser > =0
+Clase Paquete
+Datos:
+-entregado
+-codPaquete
+-volumen
+-precio
+Irep:
+-codPaquete debe ser >= 0 y único.
+-volumen debe ser > =0 
+-precio > =0
+-entregado valor booleano indica si el paquete ha sido entregado o no.
+Clase paqueteEspecial
+Datos:
+-porcentaje
+-valorAdicional
+Irep:
+-porcentaje debe ser > 0 y aumenta el costo base con dicho porcentaje.
+-valorAdicional debe ser >= 0 y se suma en caso de que el paquete tenga volumen 
+>=3000.
+Clase paqueteOrdinario
+Datos:
+-costoEnvio
+Irep:
+-costoEnvio debe ser >= 0 
+6
+Requisitos del enunciado cumplidos:
+Utilizamos los siguientes conceptos: Herencia, polimorfismo, sobreescritura, 
+sobrecarga, clases/métodos abstractos.
+Un Ejemplo que cumple con estos casos menos la sobrecarga es el método de la clase 
+abstracta Paquete calcularCostoEnvio.
+Tenemos herencia en paqueteEspecial y paqueteOrdinario ya que heredan la clase 
+abstracta Paquete. Tambien tenemos herencia en Utilitario, Automovil y camion ya que 
+heredan la clase abstracta Transporte.
+Luego tenemos polimorfismo, ya que tenemos el método calcularCostoEnvio que en las 
+clases paqueteEspecial y paqueteOrdinario, actúan de forma diferente en cada clase. De 
+igual manera también tenemos método calcularCostoEnvio pero aplicado en los 
+diferentes tipos de transporte, para asi también proporcionar el calculo de costo de un 
+transporte dependiendo los requisitos y condiciones de cada transporte. Tenemos 
+diversos, se han utilizado en este trabajo.
+Por otro lado, tenemos sobreescritura dentro de paqueteEspecial y paqueteOrdinario, 
+ya que sobrescribimos el método calcularCostoEnvio heredado de la clase Paquete para 
+proporcionar su propia lógica. Tenemos sobreescritura también en lo que son los 
+toString de cada tipo de paquete ya que queremos que cada paquete imprima no solo 
+los datos generales sino los particulares de ellos mismos. Esto también se repite para los 
+toString de cada tipo de transporte. Tambien contamos con el método 
+puedellevarPaquete(Paquete paquete) el cual esta en transporte pero se sobreescribe
+tanto en camion como en automóvil y en utilitario, básicamente cada transporte que 
+llame ese método va a tener su propia lógica para saber si puede llevar un determinado 
+tipo de paquete o no. Y tenemos varios mas.
+Para cumplir la sobrecarga, podemos agarrar el método agregarPaquete de la clase 
+EmpresaAmazing, ya que contamos con dos versiones del método agregarPaquete que 
+aceptan diferentes parámetros, uno para paquetes ordinario que toma como parámetro 
+(codPedido, volumen, precio, costoEnvio) y otro para los paquetes especiales que toma 
+como parámetro (codPedido, volumen, precio, porcentaje, adicional).
+Tecnologías Java:
+StringBuilder:
+Utilizamos el StringBuilder en el método cargarTransporte de la clase EmpresaAmazing, 
+ya que cada vez que cargamos un transporte, lo cargamos con paquete y utilizando la 
+tecnología de java podemos armar una lista de paquetes cargados que se podrá ir 
+actualizando en formato String.
+7
+Iteradores y Foreach:
+Utilizamos un Iterador y Foreach en el método quitarPaquete de la clase 
+EmpresaAmazing, ya que primero recorremos los pedidos (Foreach) y luego aplicamos 
+un iterador para obtener la colección de paquetes y esto nos garantiza buscar el paquete 
+que se desea eliminar más fácilmente. Este es un ejemplo puntual pero los Foreach los 
+utilizamos casi a lo largo de todo el tp
