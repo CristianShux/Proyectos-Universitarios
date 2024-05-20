@@ -164,9 +164,9 @@ El segundo trabajo práctico de Programación III continúa con el desarrollo de
 - Implementar soluciones escalables y eficientes.
 
 **Características Principales:**
-- Consumo e implementación de servicios web RESTful.
-- Uso de bases de datos para persistencia de datos.
-- Desarrollo de aplicaciones distribuidas.
+- Implementación de grafos.
+- Desarrollo de algoritmos de recorrido y búsqueda en grafos.
+- Manejo de excepciones y archivos.
 
 **Repositorio:**
 [TP2 Programación III](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP2%20PROGRAMACION%20III)
