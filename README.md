@@ -136,21 +136,27 @@ El proyecto de Sistemas Operativos y Redes se enfoca en el diseño y despliegue 
 ## TP1 Programación III
 
 **Descripción:**
-El primer trabajo práctico de Programación III se centra en el desarrollo de aplicaciones utilizando patrones de diseño y técnicas avanzadas de programación.
+El primer trabajo práctico de Programación III se centra en el desarrollo de aplicaciones utilizando patrones de diseño y técnicas de programación. Al ser el primero y la primera interaccion con lo que es WindowBuilder para las interfaces visuales en Java, es un trabajo de reconocimiento del mismo y familizarizacion, claramente se utilizan conceptos ya adquiridos en programacion I-II.
+Este trabajo consiste en implentar una aplicacion para jugar al famoso juego "2048".La aplicacion cuenta con una interfaz visual y con los elementos adecuados para realizar
+las acciones del juego. Ademas del funcionamiento normal del 2048, se lleva la cuenta del puntaje acumulado por el usuario y se registran los mejores puntajes para luego dar una interfaz para consultar tablas de posiciones historicas.
+
 
 **Tecnologías Utilizadas:**
-- Lenguaje de Programación: C#
-- Framework: .NET
+- Lenguaje de Programación: Java
+- WindowBuilder
 
 **Objetivos:**
 - Aplicar patrones de diseño en el desarrollo de software.
 - Desarrollar aplicaciones robustas y escalables.
-- Implementar técnicas avanzadas de programación.
+- Aplicar una arquitectura de software multicapa dividida en niveles de presentación, negocio y datos.
+- Cumplir estrictamente el principio de separated presentation: el código de negocio no debe conocer la existencia de la interfaz, y la interfaz debe solicitar servicios al código de negocio.
 
 **Características Principales:**
-- Uso de patrones de diseño como Singleton, Factory y Observer.
+- Uso de arquitectura multicapa y forms and controls.
 - Desarrollo de interfaces gráficas de usuario.
-- Implementación de aplicaciones de consola y web.
+- Creacion de un juego 2048 totalmente funcional y mejorado.
+- Leer y sobreescribir un archivo.
+- Utilizacion de excepciones y manejo de las mismas.
 
 **Repositorio:**
 [TP1 Programación III](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP1%20PROGRAMACION%20III)
@@ -158,21 +164,33 @@ El primer trabajo práctico de Programación III se centra en el desarrollo de a
 ## TP2 Programación III
 
 **Descripción:**
-El segundo trabajo práctico de Programación III continúa con el desarrollo de aplicaciones avanzadas, enfatizando la integración de servicios y la arquitectura de software.
+El segundo trabajo práctico de Programación III se enfoca en la implementación de una aplicación para resolver el problema de diseño de regiones de un país, utilizando conceptos de grafos, algoritmos de optimización, algoritmos de recorrido en grafos, y esta implementado el algoritmo de Prim para crear un arbol generador minimo.
 
 **Tecnologías Utilizadas:**
-- Lenguaje de Programación: C#
-- Framework: .NET
+- Lenguaje de Programación: Java
+- WindowBuilder
+- Gson
+- JMapViewer
 
 **Objetivos:**
-- Integrar servicios web en las aplicaciones.
-- Diseñar arquitecturas de software modulares y mantenibles.
-- Implementar soluciones escalables y eficientes.
+- Resolver problemas de optimización en la división de un país en regiones utilizando algoritmos de grafos.
+- Desarrollar una interfaz gráfica para cargar, visualizar y analizar el grafo de provincias del país.
+- Implementar un algoritmo que construya un árbol generador mínimo y divida el país en k regiones conexas.
 
 **Características Principales:**
-- Implementación de grafos.
 - Desarrollo de algoritmos de recorrido y búsqueda en grafos.
 - Manejo de excepciones y archivos.
+- Implementación de grafos para representar las provincias del país y sus relaciones limítrofes.
+- Desarrollo de un algoritmo para construir un árbol generador mínimo del grafo.
+- Interfaz gráfica para cargar y visualizar el grafo de provincias, así como las regiones resultantes después de aplicar el algoritmo.
+- Leer un archivo externo con informacion en este caso un JSON con los datos de entrada.
+
+
+
+
+
+
+
 
 **Repositorio:**
 [TP2 Programación III](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP2%20PROGRAMACION%20III)
