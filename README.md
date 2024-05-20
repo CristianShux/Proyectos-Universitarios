@@ -62,7 +62,7 @@ El proyecto de Programación I introduce conceptos de programación orientada a 
 - Desarrollo de algoritmos de búsqueda y ordenación.
 
 **Repositorio:**
-[TP Programación I](URL_DEL_REPOSITORIO)
+[TP Programación I](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20PROGRAMACION%20I)
 
 ## TP Programación II
 
@@ -83,7 +83,7 @@ El proyecto de Programación II profundiza en los conceptos de POO, estructuras 
 - Manejo de excepciones y archivos.
 
 **Repositorio:**
-[TP Programación II](URL_DEL_REPOSITORIO)
+[TP Programación II](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20PROGRAMACION%20II)
 
 ## TP Sistemas Operativos y Redes
 
@@ -105,7 +105,7 @@ El proyecto de Sistemas Operativos y Redes aborda el diseño y funcionamiento de
 - Desarrollo de aplicaciones de red básicas.
 
 **Repositorio:**
-[TP Sistemas Operativos y Redes](URL_DEL_REPOSITORIO)
+[TP Sistemas Operativos y Redes](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20SISTEMAS%20OPERATIVOS%20Y%20REDES)
 
 ## TP1 Programación III
 
@@ -127,7 +127,7 @@ El primer trabajo práctico de Programación III se centra en el desarrollo de a
 - Implementación de aplicaciones de consola y web.
 
 **Repositorio:**
-[TP1 Programación III](URL_DEL_REPOSITORIO)
+[TP1 Programación III](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP1%20PROGRAMACION%20III)
 
 ## TP2 Programación III
 
@@ -149,7 +149,7 @@ El segundo trabajo práctico de Programación III continúa con el desarrollo de
 - Desarrollo de aplicaciones distribuidas.
 
 **Repositorio:**
-[TP2 Programación III](URL_DEL_REPOSITORIO)
+[TP2 Programación III](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP2%20PROGRAMACION%20III)
 
 ---
 
