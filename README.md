@@ -5,7 +5,9 @@ Este repositorio contiene los trabajos prácticos realizados durante mi formaci�
 ## TP Introducción a la Programación
 
 **Descripción:**
-El proyecto de Introducción a la Programación abarca los conceptos básicos de programación, estructuras de control, tipos de datos y funciones.
+El proyecto de Introducción a la Programación abarca los conceptos básicos de programación, estructuras de control, tipos de datos, funciones e interfaz.
+El trabajo consiste en un juego cuyo objetivo es adivinar una palabra. No se arriesgan letras sino palabras completas. Se sabe de antemano la longitud de la palabra y el juego debe avisar cuales letras de las palabras son incorrectas (no estan en la palabra), cuales son parcialmente correctas (estan en la palabra pero en otra ubicación) y cuales correctas (estan en la palabra exactamente en esa ubicación). Se acaba cuando el jugador se queda sin intentos o sin tiempo.
+
 
 **Tecnologías Utilizadas:**
 - Lenguaje de Programación: Python
@@ -25,7 +27,10 @@ El proyecto de Introducción a la Programación abarca los conceptos básicos de
 ## TP Organización del Computador
 
 **Descripción:**
-El proyecto de Organización del Computador se centra en el estudio de la arquitectura de computadoras, incluyendo la representación de datos, el funcionamiento del hardware y la interacción entre los componentes del sistema.
+El proyecto de Organización del Computador se desarrolla y pone en práctica los conceptos de arquitectura ARM.
+El trabajo consiste en un juego en donde el capitán de la nave (jugador) controla la nave que avanza libremente por el espacio, una matriz de 20 filas x 50 columnas. Van 
+apareciendo filas de asteroides, la nave debe evitar chocar con los asteroides, son diez anillos y los asteroides pueden tener diferente tamaño, cada anillo es una fila de asteroides. El juego termina cuando llega al planeta o choca con un asteroide. Al llegar a la fila 19 se considera que llegó al planeta
+
 
 **Tecnologías Utilizadas:**
 - Lenguaje de Programación: Ensamblador
@@ -34,11 +39,14 @@ El proyecto de Organización del Computador se centra en el estudio de la arquit
 - Entender la arquitectura básica de un computador.
 - Aprender a programar en lenguaje ensamblador.
 - Conocer el funcionamiento interno de los componentes del computador.
+- Comprender la manipulación de datos utilizando registros, pila y memoria.
 
 **Características Principales:**
-- Implementación de operaciones aritméticas en ensamblador.
-- Manipulación de registros y memoria.
-- Simulación de instrucciones de bajo nivel.
+- Datos almacenados en registros, pila y memoria
+- Modos de direccionamiento 
+- Llamada a procedimientos del usuario e interrupciones del sistema
+- Codificación de caracteres ASCII
+- Conversión entre bases Decimal -> Binario, Binario -> Decimal
 
 **Repositorio:**
 [TP Organización del Computador](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20ORGANIZACION%20DEL%20COMPUTADOR)
