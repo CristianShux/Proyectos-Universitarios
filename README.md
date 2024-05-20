@@ -123,12 +123,12 @@ El proyecto de Sistemas Operativos y Redes se enfoca en el diseño y despliegue 
 - Conocer los fundamentos de las redes de computadoras.
 
 **Características Principales:**
--Implementación de una red empresarial que conecta la sede principal en Ciudad XYZ con las sucursales en Ciudad A y Ciudad B.
--Segmentación de la red por departamentos utilizando subredes.
--Uso de switches y routers Cisco para la interconexión de las redes locales con la sede principal.
--Aplicación del protocolo de enrutamiento RIP versión 2.
--Implementación de programas de gestión de procesos y manejo de memoria en sistemas operativos.
--Diseño de sistemas de archivos y desarrollo de aplicaciones de red básicas.
+- Implementación de una red empresarial que conecta la sede principal en Ciudad XYZ con las sucursales en Ciudad A y Ciudad B.
+- Segmentación de la red por departamentos utilizando subredes.
+- Uso de switches y routers Cisco para la interconexión de las redes locales con la sede principal.
+- Aplicación del protocolo de enrutamiento RIP versión 2.
+- Implementación de programas de gestión de procesos y manejo de memoria en sistemas operativos.
+- Diseño de sistemas de archivos y desarrollo de aplicaciones de red básicas.
 
 **Repositorio:**
 [TP Sistemas Operativos y Redes](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20SISTEMAS%20OPERATIVOS%20Y%20REDES)
