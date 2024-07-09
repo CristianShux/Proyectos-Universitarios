@@ -195,6 +195,8 @@ G que representa las provincias del país, con un vértice por provincia y una a
 ## TP3 Programación III
 
 **Descripción:**
+El tercer trabajo práctico de Programación III se enfoca en poder entender las heuristicas implementando algoritmos golosos, nos familiarizamos con el hecho de que ante un problema NP-Completo una de las posibilidades cuando no podemos dar una solucion exacta a un problema, es implementar algoritmos aproximados como las heuristicas, que la calidad de la solucion es mala pero tenemos buena complejidad.
+El objetivo del trabajo es la implementación de un algoritmo goloso para resolver el problema de clique de peso máximo en un grafo, el cual es NP-Completo. La aplicación puede leer distintos grafos desde archivos JSON, encuentra una clique con el mayor peso posible utilizando un algoritmo goloso, el cual tiene en cuenta diferentes criterios a eleccion para llevarlo a cabo puede comparar por valor, peso, cantidad de vecinos y por ultimo visualiza los resultados en una interfaz de usuario.
 
 **Tecnologías Utilizadas:**
 - Lenguaje de Programación: Java
