@@ -1,0 +1,86 @@
+[
+    {
+        "id_materia": 1,
+        "nombre": "Taller Inicial Común: Taller de Lectura y Escritura"
+    },
+    {
+        "id_materia": 2,
+        "nombre": "Taller Inicial Orientado: Ciencias Exactas"
+    },
+    {
+        "id_materia": 3,
+        "nombre": "Taller Inicial Obligatorio del Área de Matemática"
+    },
+    {
+        "id_materia": 4,
+        "nombre": "Introducción a la Programación"
+    },
+    {
+        "id_materia": 5,
+        "nombre": "Taller de Lectura y Escritura en las Disciplinas"
+    },
+    {
+        "id_materia": 6,
+        "nombre": "Introducción a la Matemática"
+    },
+    {
+        "id_materia": 7,
+        "nombre": "Programación I"
+    },
+    {
+        "id_materia": 8,
+        "nombre": "Organización del Computador"
+    },
+    {
+        "id_materia": 9,
+        "nombre": "Inglés Lectocomprensión I"
+    },
+    {
+        "id_materia": 10,
+        "nombre": "Programación II"
+    },
+    {
+        "id_materia": 11,
+        "nombre": "Sistemas Operativos y Redes"
+    },
+    {
+        "id_materia": 12,
+        "nombre": "Lógica y Teoría de Números"
+    },
+    {
+        "id_materia": 13,
+        "nombre": "Programación III"
+    },
+    {
+        "id_materia": 14,
+        "nombre": "Problemas Socioeconómicos Contemporáneos"
+    },
+    {
+        "id_materia": 15,
+        "nombre": "Inglés Lectocomprensión II"
+    },
+    {
+        "id_materia": 16,
+        "nombre": "Gestión y Administración de Bases de Datos"
+    },
+    {
+        "id_materia": 17,
+        "nombre": "Matemática Discreta"
+    },
+    {
+        "id_materia": 18,
+        "nombre": "Inglés Lectocomprensión III"
+    },
+    {
+        "id_materia": 19,
+        "nombre": "Ingeniería de Software"
+    },
+    {
+        "id_materia": 20,
+        "nombre": "Laboratorio de Construcción de Software"
+    },
+    {
+        "id_materia": 21,
+        "nombre": "Especificación de Software"
+    }
+]

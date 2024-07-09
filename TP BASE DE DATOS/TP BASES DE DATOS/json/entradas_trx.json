@@ -1,0 +1,184 @@
+[
+  {
+    "id_orden": 1,
+    "operacion": "alta inscrip",
+    "id_alumne": 10,
+    "id_materia": 3,
+    "id_comision": 1
+  },
+  {
+    "id_orden": 2,
+    "operacion": "apertura",
+    "año": 2023,
+    "nro_semestre": 2
+  },
+  {
+    "id_orden": 3,
+    "operacion": "apertura",
+    "año": 2024,
+    "nro_semestre": 1
+  },
+  {
+    "id_orden": 4,
+    "operacion": "alta inscrip",
+    "id_alumne": 1,
+    "id_materia": 4,
+    "id_comision": 2
+  },
+  {
+    "id_orden": 5,
+    "operacion": "alta inscrip",
+    "id_alumne": 2,
+    "id_materia": 4,
+    "id_comision": 1
+  },
+  {
+    "id_orden": 6,
+    "operacion": "alta inscrip",
+    "id_alumne": 8,
+    "id_materia": 4,
+    "id_comision": 2
+  },
+  {
+    "id_orden": 7,
+    "operacion": "alta inscrip",
+    "id_alumne": 4,
+    "id_materia": 7,
+    "id_comision": 1
+  },
+  {
+    "id_orden": 8,
+    "operacion": "alta inscrip",
+    "id_alumne": 21,
+    "id_materia": 2,
+    "id_comision": 1
+  },
+  {
+    "id_orden": 9,
+    "operacion": "alta inscrip",
+    "id_alumne": 7,
+    "id_materia": 7,
+    "id_comision": 1
+  },
+  {
+    "id_orden": 10,
+    "operacion": "alta inscrip",
+    "id_alumne": 17,
+    "id_materia": 2,
+    "id_comision": 1
+  },
+  {
+    "id_orden": 11,
+    "operacion": "alta inscrip",
+    "id_alumne": 12,
+    "id_materia": 2,
+    "id_comision": 1
+  },
+  {
+    "id_orden": 12,
+    "operacion": "alta inscrip",
+    "id_alumne": 13,
+    "id_materia": 2,
+    "id_comision": 1
+  },
+  {
+    "id_orden": 13,
+    "operacion": "alta inscrip",
+    "id_alumne": 14,
+    "id_materia": 2,
+    "id_comision": 1
+  },
+  {
+    "id_orden": 14,
+    "operacion": "alta inscrip",
+    "id_alumne": 15,
+    "id_materia": 2,
+    "id_comision": 1
+  },
+  {
+    "id_orden": 15,
+    "operacion": "alta inscrip",
+    "id_alumne": 16,
+    "id_materia": 2,
+    "id_comision": 1
+  },
+  {
+    "id_orden": 16,
+    "operacion": "alta inscrip",
+    "id_alumne": 11,
+    "id_materia": 2,
+    "id_comision": 1
+  },
+  {
+    "id_orden": 17,
+    "operacion": "baja inscrip",
+    "id_alumne": 8,
+    "id_materia": 2
+  },
+  {
+    "id_orden": 18,
+    "operacion": "baja inscrip",
+    "id_alumne": 14,
+    "id_materia": 2
+  },
+  {
+    "id_orden": 19,
+    "operacion": "cierre inscrip",
+    "año": 2024,
+    "nro_semestre": 1
+  },
+  {
+    "id_orden": 20,
+    "operacion": "aplicacion cupo",
+    "año": 2024,
+    "nro_semestre": 1
+  },
+  {
+    "id_orden": 21,
+    "operacion": "baja inscrip",
+    "id_alumne": 13,
+    "id_materia": 2
+  },
+  {
+    "id_orden": 22,
+    "operacion": "ingreso nota",
+    "id_alumne": 1,
+    "id_materia": 4,
+    "id_comision": 2,
+    "nota": 10
+  },
+  {
+    "id_orden": 23,
+    "operacion": "ingreso nota",
+    "id_alumne": 8,
+    "id_materia": 4,
+    "id_comision": 1,
+    "nota": 5
+  },
+  {
+    "id_orden": 24,
+    "operacion": "cierre cursada",
+    "id_materia": 4,
+    "id_comision": 2
+  },
+  {
+    "id_orden": 25,
+    "operacion": "cierre cursada",
+    "id_materia": 16,
+    "id_comision": 1
+  },
+  {
+    "id_orden": 26,
+    "operacion": "ingreso nota",
+    "id_alumne": 8,
+    "id_materia": 4,
+    "id_comision": 2,
+    "nota": 5
+  },
+  {
+    "id_orden": 27,
+    "operacion": "cierre cursada",
+    "id_materia": 4,
+    "id_comision": 2
+  }
+]

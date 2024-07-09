@@ -1,0 +1,388 @@
+[
+  {
+    "id_alumne": 1,
+    "semestre": "2023-1",
+    "id_materia": 1,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 9,
+    "nota_final": 9
+  },
+  {
+    "id_alumne": 1,
+    "semestre": "2023-1",
+    "id_materia": 2,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 10,
+    "nota_final": 10
+  },
+  {
+    "id_alumne": 1,
+    "semestre": "2023-1",
+    "id_materia": 3,
+    "id_comision": 1,
+    "estado": "ausente",
+    "nota_regular": 0
+  },
+  {
+    "id_alumne": 1,
+    "semestre": "2023-2",
+    "id_materia": 3,
+    "id_comision": 1,
+    "estado": "regular",
+    "nota_regular": 5
+  },
+  {
+    "id_alumne": 1,
+    "semestre": "2023-2",
+    "id_materia": 5,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 7,
+    "nota_final": 7
+  },
+  {
+    "id_alumne": 2,
+    "semestre": "2023-1",
+    "id_materia": 1,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 9,
+    "nota_final": 9
+  },
+  {
+    "id_alumne": 2,
+    "semestre": "2023-1",
+    "id_materia": 2,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 10,
+    "nota_final": 10
+  },
+  {
+    "id_alumne": 2,
+    "semestre": "2023-1",
+    "id_materia": 3,
+    "id_comision": 1,
+    "estado": "ausente",
+    "nota_regular": 0
+  },
+  {
+    "id_alumne": 2,
+    "semestre": "2023-2",
+    "id_materia": 3,
+    "id_comision": 1,
+    "estado": "reprobada",
+    "nota_regular": 2
+  },
+  {
+    "id_alumne": 2,
+    "semestre": "2023-2",
+    "id_materia": 5,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 7,
+    "nota_final": 7
+  },
+  {
+    "id_alumne": 3,
+    "semestre": "2023-1",
+    "id_materia": 1,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 9,
+    "nota_final": 9
+  },
+  {
+    "id_alumne": 3,
+    "semestre": "2023-1",
+    "id_materia": 2,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 10,
+    "nota_final": 10
+  },
+  {
+    "id_alumne": 3,
+    "semestre": "2023-1",
+    "id_materia": 3,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 10,
+    "nota_final": 10
+  },
+  {
+    "id_alumne": 3,
+    "semestre": "2023-2",
+    "id_materia": 4,
+    "id_comision": 2,
+    "estado": "regular",
+    "nota_regular": 6
+  },
+  {
+    "id_alumne": 3,
+    "semestre": "2023-2",
+    "id_materia": 5,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 9,
+    "nota_final": 9
+  },
+  {
+    "id_alumne": 4,
+    "semestre": "2023-1",
+    "id_materia": 1,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 9,
+    "nota_final": 9
+  },
+  {
+    "id_alumne": 4,
+    "semestre": "2023-1",
+    "id_materia": 2,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 10,
+    "nota_final": 10
+  },
+  {
+    "id_alumne": 4,
+    "semestre": "2023-1",
+    "id_materia": 3,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 10,
+    "nota_final": 10
+  },
+  {
+    "id_alumne": 4,
+    "semestre": "2023-2",
+    "id_materia": 4,
+    "id_comision": 2,
+    "estado": "ausente",
+    "nota_regular": 0
+  },
+  {
+    "id_alumne": 4,
+    "semestre": "2023-2",
+    "id_materia": 5,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 9,
+    "nota_final": 9
+  },
+  {
+    "id_alumne": 5,
+    "semestre": "2022-1",
+    "id_materia": 1,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 10,
+    "nota_final": 10
+  },
+  {
+    "id_alumne": 5,
+    "semestre": "2022-1",
+    "id_materia": 2,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 10,
+    "nota_final": 10
+  },
+  {
+    "id_alumne": 5,
+    "semestre": "2022-1",
+    "id_materia": 3,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 10,
+    "nota_final": 10
+  },
+  {
+    "id_alumne": 5,
+    "semestre": "2022-2",
+    "id_materia": 4,
+    "id_comision": 2,
+    "estado": "aprobada",
+    "nota_regular": 9,
+    "nota_final": 9
+  },
+  {
+    "id_alumne": 5,
+    "semestre": "2022-2",
+    "id_materia": 5,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 9,
+    "nota_final": 9
+  },
+  {
+    "id_alumne": 5,
+    "semestre": "2023-1",
+    "id_materia": 6,
+    "id_comision": 1,
+    "estado": "regular",
+    "nota_regular": 5
+  },
+  {
+    "id_alumne": 5,
+    "semestre": "2023-1",
+    "id_materia": 7,
+    "id_comision": 2,
+    "estado": "aprobada",
+    "nota_regular": 8,
+    "nota_final": 8
+  },
+  {
+    "id_alumne": 5,
+    "semestre": "2023-1",
+    "id_materia": 8,
+    "id_comision": 1,
+    "estado": "regular",
+    "nota_regular": 6
+  },
+  {
+    "id_alumne": 5,
+    "semestre": "2023-2",
+    "id_materia": 11,
+    "id_comision": 1,
+    "estado": "regular",
+    "nota_regular": 6
+  },
+  {
+    "id_alumne": 6,
+    "semestre": "2023-1",
+    "id_materia": 1,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 9,
+    "nota_final": 9
+  },
+  {
+    "id_alumne": 6,
+    "semestre": "2023-1",
+    "id_materia": 2,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 10,
+    "nota_final": 10
+  },
+  {
+    "id_alumne": 6,
+    "semestre": "2023-1",
+    "id_materia": 3,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 10,
+    "nota_final": 10
+  },
+  {
+    "id_alumne": 6,
+    "semestre": "2023-2",
+    "id_materia": 4,
+    "id_comision": 2,
+    "estado": "aprobada",
+    "nota_regular": 10,
+    "nota_final": 10
+  },
+  {
+    "id_alumne": 6,
+    "semestre": "2023-2",
+    "id_materia": 5,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 9,
+    "nota_final": 9
+  },
+  {
+    "id_alumne": 7,
+    "semestre": "2023-1",
+    "id_materia": 1,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 9,
+    "nota_final": 9
+  },
+  {
+    "id_alumne": 7,
+    "semestre": "2023-1",
+    "id_materia": 2,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 10,
+    "nota_final": 10
+  },
+  {
+    "id_alumne": 7,
+    "semestre": "2023-1",
+    "id_materia": 3,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 10,
+    "nota_final": 10
+  },
+  {
+    "id_alumne": 7,
+    "semestre": "2023-2",
+    "id_materia": 4,
+    "id_comision": 2,
+    "estado": "aprobada",
+    "nota_regular": 10,
+    "nota_final": 10
+  },
+  {
+    "id_alumne": 7,
+    "semestre": "2023-2",
+    "id_materia": 5,
+    "id_comision": 1,
+    "estado": "regular",
+    "nota_regular": 6
+  },
+  {
+    "id_alumne": 8,
+    "semestre": "2023-1",
+    "id_materia": 1,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 9,
+    "nota_final": 9
+  },
+  {
+    "id_alumne": 8,
+    "semestre": "2023-1",
+    "id_materia": 2,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 10,
+    "nota_final": 10
+  },
+  {
+    "id_alumne": 8,
+    "semestre": "2023-1",
+    "id_materia": 3,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 10,
+    "nota_final": 10
+  },
+  {
+    "id_alumne": 8,
+    "semestre": "2023-2",
+    "id_materia": 6,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 10,
+    "nota_final": 10
+  },
+  {
+    "id_alumne": 8,
+    "semestre": "2023-2",
+    "id_materia": 9,
+    "id_comision": 1,
+    "estado": "aprobada",
+    "nota_regular": 8,
+    "nota_final": 8
+  }
+]
