@@ -191,6 +191,7 @@ G que representa las provincias del país, con un vértice por provincia y una a
 - Interaccion con el usuario para cargar pesos de las aristas del grafo.
 - Leer un archivo externo con informacion en este caso un JSON con los datos de entrada.
 - El grafo es un tipo generico para mayor flexibilidad y generalizacion.
+- Pruebas unitarias con JUNIT para las clases mas importantes del proyecto.
 
 ## TP3 Programación III
 
@@ -200,20 +201,22 @@ El objetivo del trabajo es la implementación de un algoritmo goloso para resolv
 
 **Tecnologías Utilizadas:**
 - Lenguaje de Programación: Java
+- WindowBuilder
+- Gson
 
 **Objetivos:**
-- 
-
+- Implementar un algoritmo goloso para hallar una clique de peso máximo en un grafo.
+- Desarrollar una aplicación que lea y procese datos de un grafo desde un archivo.
+- Visualizar el grafo y la clique obtenida en una interfaz de usuario.
+- Proporcionar estadísticas de la ejecución del algoritmo.
+  
 **Características Principales:**
--
-
-
-
-
-
-
-
-
+- Tener la posibilidad de aplicar diferentes comparadores al algoritmo goloso.
+- Implementacion del algoritmo FruchtermanReingold con algunas modificaciones, que toma el grafo, el ancho, el alto de la pantalla y devuelve las posiciones en las que se tienen que graficar los vertices del grafo para que no se superpongan y se grafiquen bien en el area dada.
+- Pruebas unitarias con JUNIT para las clases mas importantes del proyecto.
+- Leer varios archivos externos con informacion en este caso un JSON con los datos de entrada de los diferentes grafos.
+- El grafo es un tipo generico para mayor flexibilidad y generalizacion.
+- 
 **Repositorio:**
 [TP3 Programación III](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP3%20PROGRAMACION%20III)
 
