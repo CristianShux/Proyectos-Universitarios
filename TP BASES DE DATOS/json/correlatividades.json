@@ -1,0 +1,138 @@
+[
+  {
+    "id_materia": 4,
+    "id_mat_correlativa": 2
+  },
+  {
+    "id_materia": 4,
+    "id_mat_correlativa": 3
+  },
+  {
+    "id_materia": 5,
+    "id_mat_correlativa": 1
+  },
+  {
+    "id_materia": 6,
+    "id_mat_correlativa": 2
+  },
+  {
+    "id_materia": 6,
+    "id_mat_correlativa": 3
+  },
+  {
+    "id_materia": 7,
+    "id_mat_correlativa": 1
+  },
+  {
+    "id_materia": 7,
+    "id_mat_correlativa": 4
+  },
+  {
+    "id_materia": 8,
+    "id_mat_correlativa": 1
+  },
+  {
+    "id_materia": 8,
+    "id_mat_correlativa": 4
+  },
+  {
+    "id_materia": 9,
+    "id_mat_correlativa": 1
+  },
+  {
+    "id_materia": 9,
+    "id_mat_correlativa": 2
+  },
+  {
+    "id_materia": 9,
+    "id_mat_correlativa": 3
+  },
+  {
+    "id_materia": 10,
+    "id_mat_correlativa": 6
+  },
+  {
+    "id_materia": 10,
+    "id_mat_correlativa": 7
+  },
+  {
+    "id_materia": 11,
+    "id_mat_correlativa": 7
+  },
+  {
+    "id_materia": 11,
+    "id_mat_correlativa": 8
+  },
+  {
+    "id_materia": 12,
+    "id_mat_correlativa": 6
+  },
+  {
+    "id_materia": 13,
+    "id_mat_correlativa": 10
+  },
+  {
+    "id_materia": 14,
+    "id_mat_correlativa": 1
+  },
+  {
+    "id_materia": 15,
+    "id_mat_correlativa": 5
+  },
+  {
+    "id_materia": 15,
+    "id_mat_correlativa": 9
+  },
+  {
+    "id_materia": 16,
+    "id_mat_correlativa": 8
+  },
+  {
+    "id_materia": 16,
+    "id_mat_correlativa": 10
+  },
+  {
+    "id_materia": 16,
+    "id_mat_correlativa": 12
+  },
+  {
+    "id_materia": 17,
+    "id_mat_correlativa": 12
+  },
+  {
+    "id_materia": 18,
+    "id_mat_correlativa": 15
+  },
+  {
+    "id_materia": 19,
+    "id_mat_correlativa": 13
+  },
+  {
+    "id_materia": 20,
+    "id_mat_correlativa": 5
+  },
+  {
+    "id_materia": 20,
+    "id_mat_correlativa": 14
+  },
+  {
+    "id_materia": 20,
+    "id_mat_correlativa": 16
+  },
+  {
+    "id_materia": 20,
+    "id_mat_correlativa": 19
+  },
+  {
+    "id_materia": 20,
+    "id_mat_correlativa": 21
+  },
+  {
+    "id_materia": 21,
+    "id_mat_correlativa": 12
+  },
+  {
+    "id_materia": 21,
+    "id_mat_correlativa": 13
+  }
+]
