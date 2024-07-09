@@ -2,6 +2,23 @@
 
 Este repositorio contiene los trabajos prácticos realizados durante mi formación académica. A continuación, se describen los proyectos desarrollados en diferentes asignaturas.
 
+## TP Bases de datos
+
+**Descripción:**
+
+**Tecnologías Utilizadas:**
+- Lenguaje de Programación: 
+
+**Objetivos:**
+- 
+  
+
+**Características Principales:**
+
+
+**Repositorio:**
+[TP Bases de datos](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20BASES%20DE%20DATOS)
+
 ## TP Introducción a la Programación
 
 **Descripción:**
