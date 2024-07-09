@@ -1,0 +1,51 @@
+{
+  "vertices": [
+    { "valor": 1,  "peso": 10.0 },
+    { "valor": 2,  "peso": 5.0 },
+    { "valor": 3,  "peso": 2.5 },
+    { "valor": 4,  "peso": 8.0 },
+    { "valor": 5,  "peso": 3.5 },
+    { "valor": 6,  "peso": 7.5 },
+    { "valor": 7,  "peso": 1.0 },
+    { "valor": 8,  "peso": 4.0 },
+    { "valor": 9,  "peso": 6.0 },
+    { "valor": 10, "peso": 9.0 },
+    { "valor": 11, "peso": 11.0 },
+    { "valor": 12, "peso": 12.5 },
+    { "valor": 13, "peso": 3.0 },
+    { "valor": 14, "peso": 7.0 },
+    { "valor": 15, "peso": 8.5 }
+  ],
+  "aristas": [
+    // Aristas que forman la clique de 4 vértices
+    { "x": 1, "y": 4 },
+    { "x": 1, "y": 6 },
+    { "x": 1, "y": 10 },
+    { "x": 4, "y": 6 },
+    { "x": 4, "y": 10 },
+    { "x": 6, "y": 10 },
+
+    // Otras aristas adicionales en el grafo
+    { "x": 2, "y": 3 },
+    { "x": 2, "y": 5 },
+    { "x": 2, "y": 7 },
+    { "x": 3, "y": 5 },
+    { "x": 3, "y": 8 },
+    { "x": 5, "y": 8 },
+    { "x": 7, "y": 9 },
+    { "x": 8, "y": 9 },
+    { "x": 8, "y": 11 },
+    { "x": 9, "y": 12 },
+    { "x": 10, "y": 13 },
+    { "x": 11, "y": 13 },
+    { "x": 11, "y": 14 },
+    { "x": 12, "y": 14 },
+    { "x": 12, "y": 15 },
+    { "x": 13, "y": 15 },
+    { "x": 14, "y": 15 }
+  ]
+}
+
+
+
+
