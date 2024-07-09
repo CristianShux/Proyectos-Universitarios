@@ -192,6 +192,19 @@ G que representa las provincias del país, con un vértice por provincia y una a
 - Leer un archivo externo con informacion en este caso un JSON con los datos de entrada.
 - El grafo es un tipo generico para mayor flexibilidad y generalizacion.
 
+## TP3 Programación III
+
+**Descripción:**
+
+**Tecnologías Utilizadas:**
+- Lenguaje de Programación: Java
+
+**Objetivos:**
+- 
+
+**Características Principales:**
+-
+
 
 
 
