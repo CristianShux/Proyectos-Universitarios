@@ -213,7 +213,7 @@ G que representa las provincias del país, con un vértice por provincia y una a
 
 
 **Repositorio:**
-[TP2 Programación III](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP2%20PROGRAMACION%20III)
+[TP3 Programación III](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP3%20PROGRAMACION%20III)
 
 ---
 
