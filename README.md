@@ -5,20 +5,32 @@ Este repositorio contiene los trabajos prácticos realizados durante mi formaci�
 ## TP Bases de datos
 
 **Descripción:**
-Desarrollo de un sistema para una universidad que administra la apertura y cierre de períodos de inscripción, alta y baja de inscripciones a materias, aplicación de cupos, ingreso de notas y cierre de cursadas, asegurando la consistencia de la información y notificando a los alumnos por email. El sistema compara el modelo relacional con un modelo no relacional NoSQL, utilizando BoltDB.
+El proyecto de Base de datos abarca en su gran mayoria los conceptos de diseño y administracion de una base de datos relacional, en la cual se utiliza el SQL-PL/pgSQL-GO. Se cuenta con stored procedures y triggers para realizar las diferentes funcionalidades que requiere la base de datos y actualizar automaticamante donde se requiera, tambien se incluye un manejo basico de transacciones para llevarlas a cabo. El lenguaje GO es para manejar lo que seria un pequeña interfaz para realizar las acciones en la base de datos. A su vez el sistema compara el modelo relacional con un modelo no relacional NoSQL, utilizando BoltDB.
 
 **Tecnologías Utilizadas:**
-- Lenguaje de Programación: 
-
-**Objetivos:**
 - Lenguaje de Programación: Go
 - Base de Datos Relacional: PostgreSQL
 - Base de Datos NoSQL: BoltDB
 - SQL, PL/pgSQL
 - JSON
 - MariaDB
+
+**Objetivos:**
+- Administrar inscripciones y cupos de materias, notas y cierre de cursadas.
+- Mantener la consistencia de la información.
+- Informar a los alumnos sobre eventos importantes vía email.
+- Comparar un modelo relacional con un modelo NoSQL con BoltDB.
+- Afianzar y mejorar el la practica del SQL
+- Introducirse al lenguaje GO para bases de Datos.
   
 **Características Principales:**
+- Administración de períodos de inscripción y cupos.
+- Gestión de alta y baja de inscripciones.
+- Ingreso y manejo de notas y cierre de cursadas.
+- Notificaciones por email a los alumnos.
+- Implementación de triggers, stored procedures y transacciones en SQL y PL/pgSQL.
+- Uso de JSON para almacenamiento de datos.
+- Ejecución de código SQL y administración de la base de datos desde una aplicación CLI escrita en Go.
 
 
 
