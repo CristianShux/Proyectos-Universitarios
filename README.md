@@ -5,15 +5,21 @@ Este repositorio contiene los trabajos prácticos realizados durante mi formaci�
 ## TP Bases de datos
 
 **Descripción:**
+Desarrollo de un sistema para una universidad que administra la apertura y cierre de períodos de inscripción, alta y baja de inscripciones a materias, aplicación de cupos, ingreso de notas y cierre de cursadas, asegurando la consistencia de la información y notificando a los alumnos por email. El sistema compara el modelo relacional con un modelo no relacional NoSQL, utilizando BoltDB.
 
 **Tecnologías Utilizadas:**
 - Lenguaje de Programación: 
 
 **Objetivos:**
-- 
+- Lenguaje de Programación: Go
+- Base de Datos Relacional: PostgreSQL
+- Base de Datos NoSQL: BoltDB
+- SQL, PL/pgSQL
+- JSON
+- MariaDB
   
-
 **Características Principales:**
+
 
 
 **Repositorio:**
