@@ -170,7 +170,7 @@ El proyecto de Sistemas Operativos y Redes se enfoca en el diseño y despliegue 
 ## TP1 Programación III
 
 **Descripción:**
-El primer trabajo práctico de Programación III se centra en el desarrollo de aplicaciones utilizando patrones de diseño y técnicas de programación. Al ser el primero y la primera interaccion con lo que es WindowBuilder para las interfaces visuales en Java, es un trabajo de reconocimiento del mismo y familizarizacion, claramente se utilizan conceptos ya adquiridos en programacion I-II.
+El primer proyecto de Programación III se centra en el desarrollo de aplicaciones utilizando patrones de diseño y técnicas de programación. Al ser el primero y la primera interaccion con lo que es WindowBuilder para las interfaces visuales en Java, es un trabajo de reconocimiento del mismo y familizarizacion, claramente se utilizan conceptos ya adquiridos en programacion I-II.
 Este trabajo consiste en implentar una aplicacion para jugar al famoso juego "2048".La aplicacion cuenta con una interfaz visual y con los elementos adecuados para realizar
 las acciones del juego. Ademas del funcionamiento normal del 2048, se lleva la cuenta del puntaje acumulado por el usuario y se registran los mejores puntajes para luego dar una interfaz para consultar tablas de posiciones historicas.
 
@@ -198,7 +198,7 @@ las acciones del juego. Ademas del funcionamiento normal del 2048, se lleva la c
 ## TP2 Programación III
 
 **Descripción:**
-El segundo trabajo práctico de Programación III se enfoca en la implementación de una aplicación utilizando conceptos de grafos, algoritmos de optimización, algoritmos de recorrido en grafos, y esta implementado el algoritmo de Prim para crear un arbol generador minimo.
+El segundo proyecto de Programación III se enfoca en la implementación de una aplicación utilizando conceptos de grafos, algoritmos de optimización, algoritmos de recorrido en grafos, y esta implementado el algoritmo de Prim para crear un arbol generador minimo.
 El objetivo del trabajo es implementar una aplicación para resolver el problema de diseño de regiones de un país, similar al planteado por R. Assunção et al. Tenemos un grafo 𝐺
 G que representa las provincias del país, con un vértice por provincia y una arista por cada par de provincias limítrofes. Cada arista tiene un peso que representa la similitud entre las dos provincias (el cálculo de este valor no es parte del trabajo, sino que es un dato proporcionado por el usuario).
 
@@ -230,7 +230,7 @@ G que representa las provincias del país, con un vértice por provincia y una a
 ## TP3 Programación III
 
 **Descripción:**
-El tercer trabajo práctico de Programación III se enfoca en poder entender las heuristicas implementando algoritmos golosos, nos familiarizamos con el hecho de que ante un problema NP-Completo una de las posibilidades cuando no podemos dar una solucion exacta a un problema, es implementar algoritmos aproximados como las heuristicas, que la calidad de la solucion es mala pero tenemos buena complejidad.
+El tercer proyecto de Programación III se enfoca en poder entender las heuristicas implementando algoritmos golosos, nos familiarizamos con el hecho de que ante un problema NP-Completo una de las posibilidades cuando no podemos dar una solucion exacta a un problema, es implementar algoritmos aproximados como las heuristicas, que la calidad de la solucion es mala pero tenemos buena complejidad.
 El objetivo del trabajo es la implementación de un algoritmo goloso para resolver el problema de clique de peso máximo en un grafo, el cual es NP-Completo. La aplicación puede leer distintos grafos desde archivos JSON, encuentra una clique con el mayor peso posible utilizando un algoritmo goloso, el cual tiene en cuenta diferentes criterios a eleccion para llevarlo a cabo puede comparar por valor, peso, cantidad de vecinos y por ultimo visualiza los resultados en una interfaz de usuario.
 
 **Tecnologías Utilizadas:**
