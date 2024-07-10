@@ -13,7 +13,6 @@ El proyecto de Base de datos abarca en su gran mayoria los conceptos de diseño 
 - Base de Datos NoSQL: BoltDB
 - SQL, PL/pgSQL
 - JSON
-- MariaDB
 
 **Objetivos:**
 - Administrar inscripciones y cupos de materias, notas y cierre de cursadas.
