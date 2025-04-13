@@ -254,6 +254,45 @@ El objetivo del trabajo es la implementación de un algoritmo goloso para resolv
 **Repositorio:**
 [TP3 Programación III](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP3%20PROGRAMACION%20III)
 
+# TP ESPECIFICACIONES Y VERIFICACIÓN DE SOFTWARE
+
+## Descripción:
+
+Este proyecto corresponde al desarrollo de una solución completa para la empresa ficticia **LibroClick**, una librería online que permite visualizar libros, realizar búsquedas por autor, título o ISBN, y comprar libros de forma online. El trabajo fue desarrollado como parte del curso de **Especificación y Verificación de Software (2ºC 2024 - UNGS)** y abarca desde el análisis de requerimientos hasta la validación del sistema.
+
+> 🔎 **Nota importante:** Todo el prototipo visual fue realizado con **Google Lens**, por lo tanto **no hay implementación en código**. Es una maqueta navegable y visual que simula el funcionamiento de la interfaz de usuario.
+
+## Tecnologías Utilizadas:
+- **Google Lens** para el prototipo visual interactivo.
+- **draw.io** para la elaboración de diagramas UML (casos de uso, clases, actividades, secuencia).
+- **JIRA** para la redacción y organización de historias de usuario (posteriormente volcadas al informe PDF).
+- Herramientas de modelado y documentación (Word, PDF).
+- Técnicas de testing mediante particiones de equivalencia y valores límite.
+
+## Objetivos:
+- Analizar y documentar los **requerimientos funcionales y no funcionales** del sistema.
+- Elaborar un **backlog de historias de usuario**, clasificadas como **Epics** y **Features**.
+- Realizar el diseño estructural y dinámico mediante **diagramas de clases, secuencia y actividad**.
+- Construir un **prototipo navegable** que represente la interfaz y experiencia del usuario final.
+- Aplicar **técnicas de verificación y validación** para asegurar el cumplimiento de los requerimientos.
+
+## Características Principales:
+- Registro e inicio de sesión para **clientes** y **administradores**.
+- Gestión de cuenta, tarjetas de crédito y preferencias de envío.
+- Visualización y búsqueda de libros con filtros y ordenamientos avanzados.
+- Carrito de compras con edición, guardado y recuperación automática.
+- Proceso de compra completo con validaciones y doble autenticación.
+- Gestión de pedidos y seguimiento de envíos por parte del sistema y los administradores.
+- Envío de novedades por email y suscripciones configurables.
+- Manejo de moneda y conversión automática entre pesos y dólares.
+- Acceso a estadísticas de ventas para administradores, con filtros por fecha.
+- Encuestas de satisfacción posteriores a la compra.
+- Consideraciones de privacidad, seguridad y cumplimiento de regulaciones de datos personales.
+
+**Repositorio:**
+[TP Especificaciones y verificación de software](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20ESPECIFICACIONES%20Y%20VERIFICACI%C3%93N%20DE%20SOFTWARE)
+
+
 ---
 
 **Gracias por ver** 👋
