@@ -266,7 +266,6 @@ Este proyecto corresponde al desarrollo de una solución completa para la empres
 - **Google Lens** para el prototipo visual interactivo.
 - **draw.io** para la elaboración de diagramas UML (casos de uso, clases, actividades, secuencia).
 - **JIRA** para la redacción y organización de historias de usuario (posteriormente volcadas al informe PDF).
-- Herramientas de modelado y documentación (Word, PDF).
 - Técnicas de testing mediante particiones de equivalencia y valores límite.
 
 ## Objetivos:
