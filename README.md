@@ -291,7 +291,73 @@ Este proyecto corresponde al desarrollo de una solución completa para la empres
 **Repositorio:**
 [TP Especificaciones y verificación de software](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20ESPECIFICACIONES%20Y%20VERIFICACI%C3%93N%20DE%20SOFTWARE)
 
+#  TP Ingeniería de Software
 
+## Descripción
+
+Este trabajo práctico consiste en el desarrollo de un **Sistema de Encuestas** para un organismo de salud distrital.  
+Su propósito es recolectar la opinión de pacientes que fueron atendidos en centros de salud habilitados para la aplicación de un medicamento, con el fin de evaluar la calidad del servicio recibido. 
+
+## Entregables del Trabajo
+
+El proyecto fue abordado siguiendo buenas prácticas de Ingeniería de Software, entregando:
+
+- **Análisis de Requerimientos**  
+  - Clasificación funcional y no funcional  
+  - Codificación por nivel de prioridad (Esencial, Importante, Deseable)  
+  - 22 Requerimientos funcionales + 8 no funcionales
+
+- **Casos de Uso completos**  
+  - 16 Casos de uso documentados con escenarios normales y alternativos  
+  - Identificación de actores principales y sistemas externos  
+  - Diagrama general de casos de uso
+
+- **Modelo Conceptual**  
+  - Diagrama de dominio con entidades, atributos y relaciones clave  
+
+- **Arquitectura del Sistema**  
+  - Módulos definidos por rol de usuario (paciente, coordinador, secretario)  
+  - Interacción con servicios externos: correo, mapas, sistema general de salud  
+  - Justificación de decisiones arquitectónicas
+
+- **Planificación**  
+  - Ciclo de vida elegido: **Waterfall** con correcciones del modelo **Salmón**  
+  - Diagrama de Gantt con tareas, dependencias y entregables  
+
+- **Prueba de Concepto Web**  
+  - Implementación básica del flujo funcional en tecnologías web
+    
+> 🔎 **Nota importante:** La prueba de concepto implementada en web incluye pantallas básicas y simulación de funciones clave, pero claramente no estan implementadas todas las cosas
+relevadas en los requerimientos y contemplados en los casos de uso, ya que se pedia algo basico y orientativo.
+
+## Tecnologías Utilizadas
+
+- HTML, CSS, JavaScript (Vanilla)
+- **Leaflet.js** (para interacción con mapas)
+- Herramientas de modelado: **Draw.io**, **StarUML**
+- Planificación: **ProjectLibre**
+- Almacenamiento local (localStorage) para simulación de persistencia de datos
+  
+## Objetivos del Sistema
+
+- Permitir la autenticación de usuarios con distintos roles.
+- Simular la importación de pacientes desde un sistema externo.
+- Generar y responder encuestas de forma anónima.
+- Visualizar los centros de salud agrupados por zona en un mapa.
+- Enviar notificaciones simuladas a pacientes y coordinadores.
+- Consultar resultados y generar reportes filtrados.
+
+---
+
+## Características Principales
+
+- Interfaz para **pacientes** con opción de completar encuestas.
+- Visualización de centros de salud en un mapa interactivo (Leaflet).
+- Interfaz para **coordinadores**, con zonas asignadas y acceso a resultados.
+- Simulación de envío de notificaciones (mediante JS).
+- Organización modular: carpetas `Html`, `CSS`, `Js`.
+- Persistencia simulada de respuestas con LocalStorage.
+- Resultados anónimos, como exige la normativa del sistema.
 
 ---
 
