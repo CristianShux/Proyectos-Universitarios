@@ -1,0 +1,174 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predicción de preferencias</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="{% static 'styles/prediccion.css' %}" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav col-12">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: aliceblue" href="/prediccion"
+                >Predicción</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/datos-entrenamiento"
+                >Datos de entrenamiento</a
+              >
+            </li>
+            <li class="nav-item">
+                        <a class="nav-link" href="/predicciones">Predicción Múltiple</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>PREFERENCIAS</h1>
+      <section id="prediccion">
+        <div class="cont-prev">
+          <p>
+            En esta sección, mediante los datos que se piden, se predecir como
+            es posible que el empleado en cuestión prefiera ser notificado.
+          </p>
+          <p>
+            Las preferencias de los canales que se prevee que el empleado
+            preferirá pueden ser:
+          </p>
+          <ul>
+            <li>
+              <h5>Correo electrónico</h5>
+              <p>
+                Se usa para comunicaciones más formales. Puede no ser inmediato,
+                ya que los empleados no revisan el correo en tiempo real. Puede
+                saturarse con otros correos y pasar desapercibido.
+              </p>
+            </li>
+            <li>
+              <h5>Slack</h5>
+              <p>
+                Herramienta de mensajería para equipos. Notificaciones en tiempo
+                real.Es más informal que el correo.
+              </p>
+            </li>
+            <li>
+              <h5>Notificación Push</h5>
+              <p>
+                Aparece en la pantalla del celular o escritorio de inmediato.
+                Puede ser intrusivo si se envían demasiadas notificaciones.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cont-form">
+          <form method="post" id="formulario">
+            {% csrf_token %}
+            <!-- EVITA ERRORES DE CORS -->
+            <fieldset>
+              <legend>Datos del empleado</legend>
+              {{ form.as_p }}
+              <button type="submit" id="btn-predecir" class="btn btn-primary">
+                Predecir preferencia del empleado
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #324c80"
+    >
+      <div
+        id="footer"
+        class="text-center p-3"
+        style="background-color: #327d80"
+      >
+        © GRUPO 6 - UNGS - 2025 Todos los derechos reservados
+      </div>
+    </footer>
+
+    <script>
+      document
+        .querySelector("#btn-predecir")
+        .addEventListener("click", async (event) => {
+          const edad = document.querySelector("#edad").value;
+          const antiguedad = document.querySelector("#antiguedad").value;
+          const nombre = document.querySelector("#nombre").value;
+          const apellido = document.querySelector("#apellido").value;
+          const departamento = document.querySelector("#departamento").value;
+
+          const modal = document.createElement("dialog");
+          modal.style.width = "400px";
+          document.body.appendChild(modal);
+
+          if (
+            !nombre ||
+            !apellido ||
+            !edad ||
+            !antiguedad ||
+            departamento === "Elegir un departamento"
+          ) {
+            event.preventDefault(); // Evita el envío del formulario
+            modal.innerHTML = `
+                    <h5>Por favor, complete todos los campos.</h5>
+                    <button id="close" type="reset">Cerrar</button>`;
+            modal.showModal();
+          } else if (parseInt(edad) < 0 || parseInt(edad) > 100) {
+            event.preventDefault(); // Evita el envío del formulario
+            modal.innerHTML = `
+                    <h5>La edad debe ser un número entre 0 y 100.</h5>
+                    <button id="close" type="reset">Cerrar</button>`;
+            modal.showModal();
+          } else if (parseInt(antiguedad) < 0 || parseInt(antiguedad) > 50) {
+            event.preventDefault(); // Evita el envío del formulario
+            modal.innerHTML = `
+                    <h5>La antigüedad debe ser un número entre 0 y 50.</h5>
+                    <button id="close" type="reset">Cerrar</button>`;
+            modal.showModal();
+          } else if (parseInt(antiguedad) > parseInt(edad)) {
+            event.preventDefault(); // Evita el envío del formulario
+            modal.innerHTML = `
+                    <h5>La antigüedad no puede ser mayor que la edad.</h5>
+                    <button id="close" type="reset">Cerrar</button>`;
+            modal.showModal();
+          }
+
+          document.querySelector("#close").addEventListener("click", () => {
+            modal.close();
+            document.body.removeChild(modal);
+          });
+        });
+    </script>
+  </body>
+</html>

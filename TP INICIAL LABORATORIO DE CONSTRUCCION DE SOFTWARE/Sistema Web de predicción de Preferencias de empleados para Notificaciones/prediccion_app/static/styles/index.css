@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 85vh; */
+  background-color: #f0f0f0;
+}
+.btn {
+  background-color: #327d80;
+  border: 1px solid #327d80;
+
+  &:hover {
+    background-color: #324c80;
+    border: 1px solid #324c80;
+  }
+}

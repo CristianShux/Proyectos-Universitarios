@@ -1,0 +1,100 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Predicción de preferencias</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'styles/prediccion_empleados.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav col-12">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/prediccion">Predicción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/datos-entrenamiento">Datos de entrenamiento</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" style="color: aliceblue;" href="/predicciones">Predicción Múltiple</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="text-center text-white presentacion" style="background-color: #327d80">
+            <h1 class="h1" style="margin: 0;">Predicción de preferencias con múltiples empleados</h1>
+        </div>
+        <p class="descripcion" style="font-size: 1.5em; text-align: center; padding: 1em; margin: 0;">En esta sección, se puede predecir el canal de notificaciones que múltiples empleados pueden usar para recibir mensajes de eventos o cumpleaños. Se necesita un archivo Excel con extensión .xlsx que contenga una lista de datos de muchos empleados. Los datos de los empleados están separados por filas y columnas, donde cada fila representa el registro de un empleado con el nombre, apellido, edad, antigüedad y el departamento en el cuál trabajan.</p>
+        <section id="section-form">
+            <div class="cont-form" style="text-align: center; max-width: 500px;">
+           <form method="post" enctype="multipart/form-data" class="formulario" style="text-align: center;">
+             {% csrf_token %} 
+             <fieldset>
+              <legend>Datos de empleados</legend>
+              {{ form2.as_p }}
+              <button type="submit" id="btn-predecir" style="max-width: fit-content;">Predecir preferencia de empleados</button>
+             </fieldset>
+           </form>
+         </div>
+        </section>
+        <div class="container cont-table" >
+            <caption>
+                <h3>Predicción masiva de preferencias:</h3>
+            </caption>
+            <table id="tabla-datos">
+                <tr style="background-color: #327d80; color: #fff;">
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Antigüedad</th>
+                    <th>Departamento</th>
+                    <th>Preferencia</th>
+                </tr>
+                {% if registros.length == 0 %}
+                    <tr>
+                        <td colspan="6" style="text-align: center;">No hay empleados registrados.</td>
+                    </tr>
+                {% else %}
+                    {% for fila in registros %} <!-- ESTO PERMITE IMPRIMIR EL DATASET DE FORMA DINAMICA -->
+                    <tr>
+                        <td>{{ fila.Nombre }}</td>
+                        <td>{{ fila.Apellido }}</td>
+                        <td>{{ fila.Edad }}</td>
+                        <td>{{ fila.Antigüedad }}</td>
+                        <td>{{ fila.Departamento }}</td>
+                        <td style="background-color: #324c80;color: #fff;">{{ fila.PreferenciaPredicha }}</td>
+                    </tr>
+                    {% endfor %}
+                {% endif %}
+            </table>
+            </ul>
+        </div>
+
+    </main>
+    <footer class="text-center text-lg-start text-white" style="background-color: #324c80;">
+        <div id="footer" class="text-center p-3" style="background-color: #327d80">
+            © GRUPO 6 - UNGS - 2025 Todos los derechos reservados
+        </div>
+    </footer>
+</body>
+
+</html>

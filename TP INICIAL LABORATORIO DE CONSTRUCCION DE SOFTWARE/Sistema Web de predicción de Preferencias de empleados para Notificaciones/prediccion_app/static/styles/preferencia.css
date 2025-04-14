@@ -1,0 +1,64 @@
+body {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+}
+
+#main {
+  text-align: justify;
+  padding: 2em;
+}
+
+.resaltado {
+  color: #324c80
+}
+
+.prediccion-pref {
+  background-color: #327d80;
+  color: #fff;
+  margin-bottom: .5em;
+  width: fit-content;
+  padding: .5em;
+  border-radius: 10px;
+}
+
+.cont-res-desc {
+  display: flex;
+  justify-content: center;
+}
+
+.cont-resumen {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+h1 {
+  color: #333;
+}
+
+.cont-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#correo {
+  width: 500px;
+  height: 250px;
+}
+
+#slack {
+  width: 500px;
+  height: 250px;
+}
+
+#push {
+  width: 300px;
+  height: 250px;
+}

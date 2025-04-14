@@ -1,0 +1,39 @@
+body {
+	display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+}
+.presentacion {
+	padding: 1em;
+}
+.presentacion .h1 {
+	text-align: center;
+}
+.descripcion {
+	font-size: 2em;
+}
+		table,
+		th {
+			border: 1px solid black;
+		}
+		.container {
+			text-align: center;
+		}
+		form,
+		caption {
+			text-align: center;
+		}
+	
+		table,
+		td {
+			border: 1px solid black;
+		}
+	
+		table {
+			width: 100%;
+			margin-bottom: 1em;
+		}
+	
+		td {
+			padding: 5px;
+		}

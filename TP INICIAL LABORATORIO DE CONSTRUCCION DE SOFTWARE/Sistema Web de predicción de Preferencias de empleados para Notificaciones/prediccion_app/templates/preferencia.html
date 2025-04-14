@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predicción de preferencias</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="{% static 'styles/preferencia.css' %}" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav col-12">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: aliceblue" href="/prediccion">Predicción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/datos-entrenamiento">Datos de entrenamiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/predicciones">Predicción Múltiple</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1>Predicción del canal de notificaciones</h1>
+        <section id="resultado">
+            <h5>
+                La preferencia del canal que se predice para el/la empleado/a
+                <span class="resaltado">{{empleado.nombre}} {{empleado.apellido}}</span>, con <span class="resaltado">{{empleado.edad}}</span> años,
+                antigüedad de <span class="resaltado">{{empleado.antiguedad}}</span> años, del departamento
+                <span class="resaltado">{{empleado.departamento}}</span>, es:
+            </h5>
+            <h2 class="prediccion-pref">{{empleado.preferencia}}</h2>
+
+            <div class="cont-res-desc">
+                <div class="cont-resumen">
+                {% if empleado.preferencia == "Notificacion Push" %}
+
+                <h3>¿Qué son las notificaciones push?</h3>
+                <p>
+                    Las notificaciones push son mensajes emergentes que las aplicaciones
+                    web o móviles envían a los dispositivos de los usuarios incluso
+                    cuando no están utilizando activamente la aplicación. Son una
+                    herramienta eficaz para mantener la comunicación directa y en tiempo
+                    real con los usuarios.
+                </p>
+
+                <h3>Ventajas de las notificaciones push</h3>
+                <ul>
+                    <li>
+                        <strong>Comunicación instantánea:</strong> Llegan al instante al
+                        usuario, lo que permite transmitir información urgente o
+                        importante rápidamente.
+                    </li>
+                    <li>
+                        <strong>Mayor interacción:</strong> Aumentan el compromiso del
+                        usuario con la app o sitio web.
+                    </li>
+                    <li>
+                        <strong>Alcance directo:</strong> No dependen del correo
+                        electrónico ni de otros medios; llegan directamente al dispositivo
+                        del usuario.
+                    </li>
+                    <li>
+                        <strong>Personalización:</strong> Pueden segmentarse y
+                        personalizarse según los intereses y comportamientos del usuario.
+                    </li>
+                    <li>
+                        <strong>Incremento en las conversiones:</strong> Bien utilizadas,
+                        pueden guiar al usuario hacia una acción deseada, como una compra
+                        o una visita al sitio.
+                    </li>
+                </ul>
+
+
+                {% elif empleado.preferencia == "Slack" %}
+                <h3>Slack</h3>
+                <p>Slack es una plataforma de mensajería para equipos que permite la comunicación en tiempo real, el
+                    trabajo colaborativo y la integración con herramientas externas. Es ampliamente utilizada en
+                    entornos profesionales y de trabajo remoto.</p>
+
+                <h3>Ventajas de Slack</h3>
+                <ul>
+                    <li><strong>Comunicación en tiempo real:</strong> Permite chatear al instante con individuos o
+                        grupos.</li>
+                    <li><strong>Organización por canales:</strong> Facilita separar conversaciones por proyectos,
+                        equipos o temas.</li>
+                    <li><strong>Integraciones:</strong> Se conecta con herramientas como Google Drive, Trello, GitHub,
+                        entre otras.</li>
+                    <li><strong>Historial accesible:</strong> Guarda todas las conversaciones, archivos y enlaces para
+                        consulta futura.</li>
+                    <li><strong>Multiplataforma:</strong> Disponible en web, escritorio y móvil.</li>
+                </ul>
+
+                {% elif empleado.preferencia == "Correo" %}
+                <h3>Correo Electrónico</h3>
+                <p>El correo electrónico es un medio de comunicación digital que permite enviar mensajes, archivos y
+                    documentos a través de internet. Es uno de los métodos más tradicionales y formales en entornos
+                    profesionales.</p>
+
+                <h3>Ventajas del Correo Electrónico</h3>
+                <ul>
+                    <li><strong>Alcance global:</strong> Se puede enviar un mensaje a cualquier persona con una
+                        dirección de correo, sin importar su ubicación.</li>
+                    <li><strong>Formalidad:</strong> Es ideal para comunicaciones profesionales, oficiales o
+                        documentadas.</li>
+                    <li><strong>Adjuntos:</strong> Permite enviar archivos, imágenes, documentos, etc.</li>
+                    <li><strong>Accesibilidad:</strong> Se puede acceder desde cualquier dispositivo con conexión a
+                        internet.</li>
+                    <li><strong>Historial de comunicación:</strong> Conserva copias de todos los mensajes enviados y
+                        recibidos.</li>
+                </ul>
+                {% endif %}
+                </div>
+                <div class="cont-img">
+                    {% if empleado.preferencia == "Notificacion Push" %}
+                    <img id="push" src="{% static 'images/notificacion-push.png' %}" alt="Notificacion Push" />
+                    {% elif empleado.preferencia == "Slack" %}
+                    <img id="slack" src="{% static 'images/slack.png' %}" alt="Slack" />
+                    {% elif empleado.preferencia == "Correo" %}
+                    <img id="correo" src="{% static 'images/gmail.png' %}" alt="Correo Electronico" />
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center text-lg-start text-white" style="background-color: #324c80">
+        <div id="footer" class="text-center p-3" style="background-color: #327d80">
+            © GRUPO 6 - UNGS - 2025 Todos los derechos reservados
+        </div>
+    </footer>
+</body>
+
+</html>
