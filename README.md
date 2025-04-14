@@ -347,8 +347,6 @@ relevadas en los requerimientos y contemplados en los casos de uso, ya que se pe
 - Enviar notificaciones simuladas a pacientes y coordinadores.
 - Consultar resultados y generar reportes filtrados.
 
----
-
 ## Características Principales
 
 - Interfaz para **pacientes** con opción de completar encuestas.
@@ -361,6 +359,48 @@ relevadas en los requerimientos y contemplados en los casos de uso, ya que se pe
 
 **Repositorio:**
 [TP Ingenieria de software](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20INGENIERIA%20DE%20SOFTWARE)
+
+# TP INICIAL Laboratorio de construccion de software
+
+## Descripción
+
+Este proyecto consiste en el desarrollo de un sistema de predicción que utiliza **Machine Learning** para determinar cuál es el canal de notificación más adecuado (Correo electrónico, Slack o Notificación Push) para empleados dentro de una empresa, en base a sus características personales(edad, antiguedad y departamento) y su contexto laboral.
+El modelo fue integrado en una **aplicación web con Django**, permitiendo predicciones tanto individuales como masivas (por archivo Excel), con una interfaz sencilla y amigable para el usuario.
+
+## Tecnologías Utilizadas
+
+- Python (pandas, numpy, scikit-learn, joblib, openpyxl, matplotlib)
+- Django (framework web)
+- Árboles de Decisión (modelo de clasificación)
+- HTML, CSS (integración front básica vía Django templates)
+- Excel (.xlsx) para carga de datos masivos
+
+## Objetivos
+
+- Desarrollar un modelo de clasificación para predecir la preferencia de notificación de empleados.
+- Crear un dataset sintético con al menos 50 empleados.
+- Entrenar el modelo con Árboles de Decisión.
+- Integrar el modelo en una interfaz web para su uso práctico.
+- Permitir tanto predicción unitaria como múltiple (masiva) desde la web.
+
+## Características Principales
+
+- **Entrenamiento de modelo supervisado** con Árboles de Decisión.
+- **Generación automática de dataset ficticio** con datos de empleados (edad, antigüedad y departamento).
+- **Predicción individual** desde un formulario web.
+- **Predicción múltiple** cargando un archivo `.xlsx` con datos de empleados.
+- **Interfaz web desarrollada en Django** accesible desde el navegador.
+- **Visualización de resultados** en pantalla con explicación del canal sugerido.
+- **Modelo preentrenado y reutilizable** (almacenado con `joblib`).
+
+## Cómo ejecutar el sistema
+
+1. Instalar dependencias desde terminal:
+   ```bash
+   pip install -r requirements.txt
+**Repositorio:**
+[TP Inicial Laboratorio de Construccion de software](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20INICIAL%20LABORATORIO%20DE%20CONSTRUCCION%20DE%20SOFTWARE)
+
 ---
 
 **Gracias por ver** 👋
