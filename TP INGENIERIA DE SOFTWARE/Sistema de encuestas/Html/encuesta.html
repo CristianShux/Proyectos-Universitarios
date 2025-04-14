@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Centro de Salud</title>
+    <link rel="stylesheet" href="../CSS/encuesta.css">
+    <script src="../Js/codigo.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Encuesta de Satisfacción del Centro de Salud</h1>
+        <form action="#" method="POST">
+            <div class="pregunta">
+                <label for="pregunta1">1. ¿Cómo calificaría la atención recibida?</label>
+                <input type="number" id="pregunta1" name="pregunta1" min="1" max="10" required>
+            </div>
+
+            <br>
+
+            <div class="pregunta">
+                <label for="pregunta2">2. ¿Qué tan fácil le resultó conseguir turno para atenderse?</label>
+                <input type="number" id="pregunta2" name="pregunta2" min="1" max="10" required>
+            </div>
+
+            <br>
+
+            <div class="pregunta">
+                <label for="pregunta3">3. ¿Cómo calificaría el trato del personal de recepción?</label>
+                <input type="number" id="pregunta3" name="pregunta3" min="1" max="10" required>
+            </div>
+
+            <br>
+
+            <div class="pregunta">
+                <label for="pregunta4">4. ¿Cómo calificaría la puntualidad con la que fue atendido?</label>
+                <input type="number" id="pregunta4" name="pregunta4" min="1" max="10" required>
+            </div>
+
+            <br>
+
+            <div class="pregunta">
+                <label for="pregunta5">5. ¿Cómo calificaría la comodidad de las instalaciones durante el tiempo de espera?</label>
+                <input type="number" id="pregunta5" name="pregunta5" min="1" max="10" required>
+            </div>
+
+            <br>
+
+            <div class="pregunta">
+                <label for="pregunta6">6. ¿Cómo calificaría el trato del personal médico?</label>
+                <input type="number" id="pregunta6" name="pregunta6" min="1" max="10" required>
+            </div>
+
+            <br>
+
+            <div class="pregunta">
+                <label for="pregunta7">7. ¿Considera que el personal médico atendió todas sus inquietudes o preocupaciones?</label>
+                <input type="number" id="pregunta7" name="pregunta7" min="1" max="10" required>
+            </div>
+
+            <br>
+
+            <div class="pregunta">
+                <label for="pregunta8">8. ¿Qué tan satisfecho está con el tiempo que el personal médico le dedicó?</label>
+                <input type="number" id="pregunta8" name="pregunta8" min="1" max="10" required>
+            </div>
+
+            <br>
+
+            <div class="pregunta">
+                <label for="pregunta9">9. ¿Cómo calificaría la limpieza de las instalaciones?</label>
+                <input type="number" id="pregunta9" name="pregunta9" min="1" max="10" required>
+            </div>
+
+            <br>
+
+            <div class="pregunta">
+                <label for="pregunta10">10. ¿Qué tan probable es que recomiende este centro de salud a familiares o amigos?</label>
+                <input type="number" id="pregunta10" name="pregunta10" min="1" max="10" required>
+            </div>
+
+            <br>
+
+            <div class="comentario">
+                <label for="comentario">Comentarios adicionales:</label>
+                <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Escriba aquí sus comentarios..."></textarea>
+            </div>
+
+            <button type="submit">Enviar Encuesta</button>
+
+            <button onclick="guardarNumeros()">Guardar Números</button>
+            <button onclick="mostrarNumeros()">Mostrar Números Guardados</button>
+        
+
+
+
+        </form>
+    </div>
+</body>
+</html>

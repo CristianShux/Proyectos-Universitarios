@@ -1,0 +1,55 @@
+<!-- PROBANDO-->
+ <!-- PROBANDO 2-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Inicio de sesión</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="../CSS/iniciosesion.css">
+</head>
+<body>
+    <body>
+        <h1 class="titulo"> SISTEMA DE ENCUESTAS</h1>
+        <div class="login-contenedor">
+            <h2>Inicio de sesión</h2>
+            <form action="#" method="POST">
+                <div class="datos-entrada">
+                    <input type="text" placeholder="DNI o número de legajo" required>
+                </div>
+                <div class="datos-entrada">
+                    <input type="password" id="password" placeholder="Contraseña" required>
+                    <span class="mostrar-contraseña" onclick="togglePassword()"> Mostrar</span>
+                </div>
+                <button type="submit" class="boton-inicio">Iniciar sesión</button>
+                <p class="terminos">
+                    Al continuar, aceptas los <a href="#"><b>Términos de uso</b></a> y <a href="#"><br><b>Políticas de privacidad</b></a>.
+                </p>
+                <div class="links">
+                    <a href="#"><b>Otro problema con el inicio de sesion</b></a>
+                    <a href="#"><b>¿Olvidaste tu contraseña?</b></a>
+                </div>
+            </form>
+            <hr>
+        </div>
+
+        <script>        
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            const toggleText = document.querySelector('.mostrar-contraseña');
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text"; 
+                toggleText.textContent = "Ocultar"; 
+            } else {
+                passwordField.type = "password"; 
+                toggleText.textContent = "Mostrar"; 
+            }
+        }
+        </script>
+
+    </body>
+    
+</body>
+</html>

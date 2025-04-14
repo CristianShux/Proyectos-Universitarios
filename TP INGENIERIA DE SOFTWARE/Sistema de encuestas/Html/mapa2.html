@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mapa centros de salud</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- pasarlo a un css -->
+    <style>
+        body {
+            background-color: #005f8a;
+        }
+
+        #mi_mapa {
+            height: 400px;
+            width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mi_mapa"></div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script>
+
+        let map = L.map('mi_mapa').setView([-34.52204, -58.70057], 12)
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        var greenIcon = new L.Icon({
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
+
+        L.marker([-34.536154, -58.721175]).addTo(map).bindPopup("Hospital Larcade - San Miguel")
+        L.marker([-34.520869, -58.717069], { icon: greenIcon }).addTo(map).bindPopup("Hospital Polo - Malvinas Argentinas")
+        L.marker([-34.516391, -58.740807]).addTo(map).bindPopup("Hospital Mercante - Jose C Paz")
+        L.marker([-34.562101, -58.678805]).addTo(map).bindPopup("Hospital Central - Bella Vista")
+        L.marker([-34.495668, -58.709095], { icon: greenIcon }).addTo(map).bindPopup("Hospital de Trauma - Pablo Nogues")
+    </script>
+
+</body>
+
+</html>

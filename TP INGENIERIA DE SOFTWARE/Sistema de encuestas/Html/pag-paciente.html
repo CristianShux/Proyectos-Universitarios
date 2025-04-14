@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Paciente</title>
+    <link rel="stylesheet" href="../CSS/templateUsuario.css">
+
+</head>
+
+<body>
+    <h1 id="encabezado">¡Bienvenido!<br>¿Qué desea hacer?</h1> <!-- agregar nombre o anonimo? -->
+
+    <div class="container">
+        <button class="boton" id="encuestas" onclick="location.href='encuesta.html'">Completar encuesta</button>
+
+        <br>
+
+        <button class="boton" id="centros" onclick="mostrarTextoYBoton()">Consultar centro de salud</button>
+
+        <p id="texto">Usted se atendió en el <u>Hospital Larcade</u> <br> • Dirección: Av. Pte. J. D. Perón 2311, San
+            Miguel, Buenos Aires</p>
+
+        <button id="nuevoBoton" onclick="location.href='mapa.html', marcadoresPaciente()">Ver en mapa</button>
+    </div>
+
+    <script>
+        function mostrarTextoYBoton() {
+            const texto = document.getElementById("texto");
+            const nuevoBoton = document.getElementById("nuevoBoton");
+
+            if (texto.style.display === "none") {
+                texto.style.display = "block";
+            } else {
+                texto.style.display = "none";
+            }
+
+            if (nuevoBoton.style.display === "none") {
+                nuevoBoton.style.display = "block";
+            } else {
+                nuevoBoton.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coordinador</title>
+    <link rel="stylesheet" href="../CSS/templateUsuario.css">
+    <script src="../Js/codigo.js"></script>
+</head>
+
+<body>
+    <h1 id="encabezado">Bienvenido coordinador:</h1>
+
+    <div class="container">
+        <button class="boton" id="centros" onclick="mostrarLista()">Consultar centros de salud asignados</button>
+        <br>
+        <p id="texto2">Usted tiene asignada la zona del partido de <u>Malvinas Argentinas</u></p>
+        <ul id="lista">
+            <li>Hospital Polo, Malvinas Argentinas</li>
+            <li>Hospital de Trauma, Pablo Nogues</li>
+        </ul>
+        <button id="nuevoBoton2" onclick="location.href='mapa2.html'">Ver en mapa</button>
+        <button class="boton" id="encuestas">Ver estado de encuestas</button>
+        <br>
+        <button class="boton" id="enviar_recordatorios">Enviar recordatorios de encuestas pendientes</button>
+        <br>
+        <button class="boton" id="generar_reporte">Generar reportes</button>
+
+        <p id="mensaje_mails" style="margin-top: 20px; font-size: 18px;"></p>
+        <ul id="lista_mails" style="margin-top: 20px; font-size: 18px;"></ul>
+        <p id="mensaje_reporte" style="margin-top: 20px; font-size: 18px;"></p>
+        <ul id="lista_reporte" style="margin-top: 20px; font-size: 18px;"></ul>
+    </div>
+
+    <script>
+        function mostrarLista() {
+            const lista = document.getElementById("lista");
+            const texto2 = document.getElementById("texto2");
+            const nuevoBoton = document.getElementById("nuevoBoton2");
+
+            if (texto2.style.display === "none") {
+                texto2.style.display = "block";
+            } else {
+                texto2.style.display = "none";
+            }
+
+            if (nuevoBoton2.style.display === "none") {
+                nuevoBoton2.style.display = "block";
+            } else {
+                nuevoBoton2.style.display = "none";
+            }
+
+            if (lista.style.display === "none") {
+                lista.style.display = "block";
+            } else {
+                lista.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

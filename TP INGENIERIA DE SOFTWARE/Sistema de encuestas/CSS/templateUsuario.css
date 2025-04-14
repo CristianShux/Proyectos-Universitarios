@@ -1,0 +1,53 @@
+body{
+    background-color: #005f8a;
+}
+
+#encabezado{
+    text-align: center;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.boton{
+    padding: 10px 20px;
+    background-color: #0077b6;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#texto {
+    display: none;
+    margin-top: 10px;
+}
+#nuevoBoton {
+    display: none;
+    margin-top: 10px;
+}
+
+#lista {
+    display: none;
+    margin-top: 10px;
+}
+
+#texto2 {
+    display: none;
+    margin-top: 10px;
+}
+#nuevoBoton2 {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
