@@ -1,0 +1,32 @@
+.btn-ant-pag,
+.btn-sig-pag {
+  max-width: fit-content;
+  background-color: var(--c1);       /* azul vibrante */
+  color: white;
+  border: none;
+  padding: 5px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px var(--c2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-ant-pag:disabled {
+  color: #666;
+}
+
+.btn-ant-pag:focus
+.btn-sig-pag:focus {
+  background-color: var(--c1);       /* azul vibrante */
+  color: white;
+  border: none;
+  padding: 8px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px var(--c2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}

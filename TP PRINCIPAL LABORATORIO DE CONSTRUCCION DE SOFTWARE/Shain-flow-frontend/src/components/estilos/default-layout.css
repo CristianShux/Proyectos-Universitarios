@@ -1,0 +1,86 @@
+.default-layout {
+  display: flex;
+  box-shadow: 0 0 10px #666;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Panel lateral: empresa */
+.cont-empresa {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-right: 1px solid #e0e0e0;
+  max-width: 500px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Contenido principal */
+.cont-child {
+  flex: 1; /* Toma el espacio restante */
+  min-width: 400px;
+  padding: 0 .5rem;
+  box-sizing: border-box;
+}
+
+.empresa-logo {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Opcionales: diseño de logo y textos */
+.empresa-logo img {
+  max-width: 100%;
+  height: 150px;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.empresa-descripcion {
+  margin-bottom: 1.5rem;
+}
+
+.empresa-descripcion h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.empresa-integrantes h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.empresa-integrantes ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.empresa-integrantes li {
+  margin-bottom: 0.3rem;
+}
+
+@media screen and (width < 1180px) {
+  .default-layout  {
+    margin: 0;
+    box-shadow: 0 0 0 0;
+
+    & .cont-empresa {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      width: 100%;
+      max-width: 100%;
+      min-height: fit-content;
+      padding: 1em;
+    }
+
+    & .child {
+      padding: 0 1rem;
+    }
+  }
+}

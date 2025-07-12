@@ -1,0 +1,214 @@
+.agregar-datos-container {
+  max-width: 650px;
+  margin: 2rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeInDatos 0.6s ease;
+}
+
+@keyframes fadeInDatos {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.agregar-datos-container h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--c1);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.form-seccion {
+  margin-bottom: 2rem;
+  padding: 1.2rem;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+/* Flex contenedor para formulario + lista */
+.contenedor-seccion {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* Formulario lado izquierdo o superior */
+.formulario-lado {
+  flex: 1;
+  min-width: 280px;
+}
+
+.formulario-lado label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--c1);
+  font-size: 0.95rem;
+}
+
+.formulario-lado input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: white;
+  transition: border-color 0.3s ease;
+}
+
+.formulario-lado input:focus {
+  outline: none;
+  border-color: var(--c1);
+  box-shadow: 0 0 5px var(--c1);
+}
+
+.formulario-lado button {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--c2);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-lado button:hover {
+  background-color: var(--c1);
+}
+
+.formulario-lado span {
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+  display: block;
+}
+
+/* Lista lado derecho o inferior */
+.lista-lado {
+  flex: 1;
+  min-width: 280px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.lista-lado h4 {
+  margin-bottom: 1rem;
+  color: var(--c1);
+}
+
+.lista-lado ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-lado li {
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.lista-lado button {
+  background-color: var(--c2);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lista-lado button:hover {
+  background-color: var(--c1);
+}
+
+/* Scrollbar personalizado para las listas */
+.lista-lado::-webkit-scrollbar {
+  width: 7px;
+}
+
+.lista-lado::-webkit-scrollbar-thumb {
+  background-color: var(--c1);
+  border-radius: 4px;
+}
+
+.lista-lado::-webkit-scrollbar-track {
+  background-color: #eee;
+
+}
+
+.tabs-datos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tabs-datos button {
+  padding: 0.5rem 1.2rem;
+  background-color: #eee;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #444;
+  transition: 0.3s;
+}
+
+.tabs-datos button.activo {
+  background-color: var(--c1);
+  color: white;
+}
+
+.tabs-datos button:hover {
+  background-color: var(--c2);
+  color: white;
+}
+
+.input-filtro {
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  max-width: 300px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+  .formulario-concepto {
+    padding: 1rem 1.25rem;
+  }
+
+  .agregar-datos-container {
+    margin: 1rem auto;
+    padding: 1rem 1.25rem;
+  }
+
+}

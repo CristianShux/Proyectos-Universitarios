@@ -1,0 +1,142 @@
+
+
+.agregar-salario {
+  max-width: 700px; /* menos ancho */
+  margin: 1rem auto; /* menos margen vertical */
+  padding: 1.5rem 2rem; /* menos padding */
+  font-family: Arial, Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
+  overflow: visible;
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.agregar-salario h3 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--c1);
+  text-align: center;
+  font-size: 1.3rem; /* un poco más pequeño */
+}
+
+.agregar-salario-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem; /* menos espacio entre campos */
+}
+
+.agregar-salario .form-group label {
+  font-weight: 600;
+  margin-bottom: 0.3rem; /* menos espacio debajo */
+  color: var(--c1);
+  font-size: 0.9rem; /* un poco más chico */
+}
+
+.agregar-salario .form-group select,
+.agregar-salario .form-group input {
+  padding: 0.45rem 0.6rem; /* menos padding */
+  border-radius: 6px;
+  border: 1.5px solid #ccc;
+  font-size: 0.9rem; /* texto un poco más chico */
+  background-color: #fafafa;
+  transition: border-color 0.3s ease;
+}
+
+.agregar-salario .form-group select:focus,
+.agregar-salario .form-group input:focus {
+  outline: none;
+  border-color: var(--c1);
+  box-shadow: 0 0 5px var(--c1);
+}
+
+.agregar-salario .input-error {
+  border-color: var(--c2) !important;
+  box-shadow: 0 0 5px var(--c2);
+}
+
+.botones-agregar-salario {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem; /* menos espacio */
+  margin-top: 1.2rem; /* menos margen */
+}
+
+.botones-agregar-salario button {
+  cursor: pointer;
+  padding: 0.5rem 1.5rem; /* botones más pequeños */
+  border-radius: 25px;
+  border: none;
+  font-size: 1rem; /* tamaño texto más pequeño */
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.botones-agregar-salario button[type="submit"] {
+  background-color: var(--c2);
+}
+
+.botones-agregar-salario button[type="submit"]:hover {
+  background-color: var(--c1);
+}
+
+.botones-agregar-salario button[type="button"] {
+  background-color: var(--c2);
+}
+
+.botones-agregar-salario button[type="button"]:hover {
+  background-color: var(--c1);
+}
+
+/* Tabla historial */
+.historial-salarios-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem; /* menos margen */
+  font-size: 0.85rem; /* texto más pequeño */
+  font-family: Arial, Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
+}
+
+.historial-salarios-tabla thead {
+  background-color: var(--c1);
+  color: white;
+}
+
+.historial-salarios-tabla th,
+.historial-salarios-tabla td {
+  padding: 0.5rem 0.8rem; /* menos padding */
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.historial-salarios-tabla tbody tr:nth-child(even) {
+  background-color: #fef0f0;
+}
+
+.historial-salarios-tabla tbody tr.vigente {
+  background-color: #fccaca;
+  font-weight: 700;
+}
+
+.mensaje-error {
+  color: var(--c2);
+  font-weight: 600;
+  margin-top: 0.7rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.react-datepicker-popper {
+  z-index: 9999 !important;
+}
+
+@media (max-width: 600px) {
+  .agregar-salario-grid {
+      display: flex;
+      flex-wrap: wrap;
+    }
+}

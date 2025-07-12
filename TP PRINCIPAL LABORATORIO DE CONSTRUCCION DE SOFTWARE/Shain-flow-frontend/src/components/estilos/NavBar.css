@@ -1,0 +1,240 @@
+.nav {
+  width: fit-content;
+  position: fixed;
+  z-index: 100;
+  background-color: var(--c1);
+  color: #fff;
+  padding: 10px;
+  box-shadow: 2px 0 3px var(--c1);
+  top: 0; /* Mantener en la parte superior por defecto */
+  left: 0;
+  height: 100%;
+}
+
+.cont-nav {
+  width: 180px;
+  transition: width 0.3s ease;
+}
+
+.cont-nav.collapsed {
+  width: 40px;
+}
+
+.cont-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cont-nav ul li {
+  display: flex;
+}
+
+i {
+  font-size: 1.5em;
+}
+
+.navLink {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre ícono y texto */
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out, justify-content 0.3s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navLink:hover {
+  background-color: var(--c2);
+}
+
+.navLink.active {
+  background-color: var(--c1);
+  color: white;
+  border-radius: 8px;
+}
+
+.navLink.collapsed {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+}
+
+.navLink span {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.navLink.collapsed span {
+  display: none;
+  opacity: 0;
+}
+
+.close {
+  color: #fff;
+  z-index: 200;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+/* Oculta el texto cuando está colapsado */
+.cont-nav.collapsed .navLink .label {
+  display: none;
+}
+
+/* Muestra el tooltip al hacer hover */
+.cont-nav.collapsed .navLink {
+  position: relative;
+}
+
+.cont-nav.collapsed .navLink::after {
+  content: attr(data-label); /* Extrae el texto desde un atributo */
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--c1);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  margin-left: 8px;
+  font-size: 0.85em;
+  z-index: 999;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.cont-nav.collapsed .navLink:hover::after {
+  display: block;
+}
+
+
+@media screen and (max-width: 800px) {
+  .nav {
+    top: auto; /* Desactiva la posición superior */
+    bottom: 0; /* Ubica el nav en la parte inferior */
+  }
+
+  .cont-nav {
+    text-align: center;
+    width: 40px;
+  }
+
+  .navLink {
+    text-align: center;
+    justify-content: center;
+    & i {
+      margin: 0;
+    }
+
+    & span {
+      display: none;
+    }
+  }
+
+  .close {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    top: auto; /* Desactiva la posición superior */
+    bottom: 0; /* Ubica el nav en la parte inferior */
+    height: auto; /* Ajusta la altura */
+    width: 100%; /* Ocupa todo el ancho */
+    box-shadow: none; /* Elimina la sombra cuando está en la parte inferior */
+    display: flex;
+    flex-direction: row; /* Alinea los ítems horizontalmente */
+    justify-content: center; /* Centra los ítems horizontalmente */
+  }
+
+  .cont-nav {
+    text-align: center;
+    width: 100%; /* Asegura que el contenedor del nav ocupe todo el ancho */
+    display: flex;
+    justify-content: center;
+  }
+
+  .cont-nav ul {
+    display: flex;
+    flex-direction: row; /* Alinea los ítems en una fila */
+    gap: 10px; /* Añade espacio entre los ítems */
+    justify-content: center; /* Centra los ítems horizontalmente */
+  }
+
+  .navLink {
+    justify-content: center; /* Centra el contenido de cada enlace */
+  }
+
+  .close {
+    display: none;
+  }
+  .cont-nav.collapsed .navLink::after {
+    left: 50%;
+    top: -10px;
+    transform: translate(-50%, -100%);
+    margin-left: 0;
+    padding: 8px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    background-color: var(--c1);
+    border-radius: 4px;
+  }
+  .logo-footer {
+    display: none; /* Oculta el logo en pantallas pequeñas */
+  }
+}
+@media screen and (max-width: 420px) {
+  .navLink {
+    & i {
+      font-size: 1.2em;
+    }
+    .cont-nav ul {
+      gap: 8px; /* Añade espacio entre los ítems */
+    }
+  }
+  
+}
+@media screen and (max-width: 380px) {
+  .navLink {
+    & i {
+      font-size: 1em;
+    }
+  }
+  .cont-nav ul {
+    gap: 5px; /* Añade espacio entre los ítems */
+  }
+  
+}
+/* 1) Hacemos que .cont-nav sea un flex column */
+/*    para poder empujar el footer abajo con margin-top:auto */
+.cont-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 2) Permitimos que la lista ocupe todo el espacio disponible */
+/*    y deje al footer pegado al final */
+.cont-nav ul {
+  flex: 1;
+}
+
+/* 3) Estilos del contenedor del logo */
+.logo-footer {
+  margin-top: auto;      /* empuja hacia abajo */
+  padding: 16px 0;       /* espacio arriba/abajo */
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+/* 4) Ajustes de la imagen */
+.logo-footer img {
+  max-width: 100%;
+  width: 120px;          /* o el ancho que prefieras */
+  height: auto;
+  display: inline-block;
+}

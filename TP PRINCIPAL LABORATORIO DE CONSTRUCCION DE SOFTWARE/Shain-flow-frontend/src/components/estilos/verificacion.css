@@ -1,0 +1,57 @@
+.verificacion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background-color: white;
+  text-align: center;
+}
+
+.logo {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 3em;
+}
+
+.h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.p {
+  margin-bottom: 1.5em;
+}
+
+.codigo-inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.input-box {
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 2px solid var(--c2);
+  border-radius: 8px;
+  outline: none;
+}
+
+.boton-enviar {
+  background-color: var(--c1);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton-enviar:hover {
+  background-color: var(--c2);
+}

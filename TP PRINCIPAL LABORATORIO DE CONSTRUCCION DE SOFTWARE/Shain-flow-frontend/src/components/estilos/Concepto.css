@@ -1,0 +1,167 @@
+.formulario-concepto {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 165px;
+}
+
+.formulario-concepto h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--c1);
+  font-weight: 700;
+}
+
+/* Contenedor scrollable de la tabla */
+.concepto-tabla-contenedor {
+  max-height: 420px;
+  overflow-y: auto;
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Tabla con estilos para conceptos */
+.tabla-concepto {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  background-color: #fafafa;
+}
+
+.tabla-concepto thead {
+  background-color: var(--c1);
+  color: white;
+}
+
+.tabla-concepto th,
+.tabla-concepto td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.tabla-concepto input,
+.tabla-concepto select {
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 0.95rem;
+}
+
+.tabla-concepto input:focus,
+.tabla-concepto select:focus {
+  outline: none;
+  border-color: var(--c1);
+  box-shadow: 0 0 5px var(--c1);
+}
+
+/* Botones dentro de la tabla de conceptos */
+.tabla-concepto button {
+  margin: 0 8px;          /* Más separación entre botones */
+  padding: 0.3rem 0.6rem; /* Menos padding horizontal, más “flacos” */
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  color: white;
+  background-color: var(--c2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Colores distintos para cada tipo */
+.tabla-concepto button.guardar,
+.tabla-concepto button.agregar {
+  background-color: var(--c2);
+}
+
+.tabla-concepto button.editar {
+  background-color: #1a1b1b;
+}
+
+.tabla-concepto button.cancelar {
+  background-color: #f44336;
+}
+
+.tabla-concepto button.eliminar {
+  background-color: #e53935;
+}
+
+.tabla-concepto button:hover:not(:disabled) {
+  filter: brightness(0.85);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+}
+
+.tabla-concepto button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Para fijar el encabezado */
+.tabla-concepto thead th {
+  position: sticky;
+  top: 0;
+  background-color: var(--c1);
+  color: white;
+  z-index: 1;
+}
+
+/* Scrollbar personalizado */
+.concepto-tabla-contenedor::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.concepto-tabla-contenedor::-webkit-scrollbar-thumb {
+  background: var(--c1);
+  border-radius: 4px;
+}
+
+.concepto-tabla-contenedor::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.filtros-conceptos {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filtros-conceptos input,
+.filtros-conceptos select {
+  padding: 0.5rem 0.8rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.tabla-concepto tbody tr:nth-child(even) {
+  background-color: #fef0f0; /* rosado clarito suave para filas pares */
+}
+
+.tabla-concepto tbody tr.vigente {
+  background-color: #fccaca; /* rosado más fuerte para fila vigente */
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .formulario-concepto{
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .formulario-concepto{
+    margin-left: auto;
+  }
+}

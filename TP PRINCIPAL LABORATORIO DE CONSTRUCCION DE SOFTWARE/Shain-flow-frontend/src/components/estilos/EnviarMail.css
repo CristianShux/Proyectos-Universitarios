@@ -1,0 +1,40 @@
+.cont-email {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-email {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-email input,
+.form-email textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-email button {
+  background-color: var(--c1);
+  color: white;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-email button:hover {
+  background-color: var(--c2);
+}
+
+.mensaje-exito {
+  color: green;
+  margin-top: 0.5rem;
+}

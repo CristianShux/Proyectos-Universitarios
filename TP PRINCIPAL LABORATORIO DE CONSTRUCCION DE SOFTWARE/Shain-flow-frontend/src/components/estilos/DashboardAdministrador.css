@@ -1,0 +1,39 @@
+.dashboard-container {
+  width: 90%;
+  height: 100vh;
+  padding: 16px;
+  margin-left: 155px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.dashboard-iframe {
+  position: relative;
+  z-index: 0;
+}
+
+@media (max-width: 800px) {
+  .dashboard-container {
+    width: auto;
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-container {
+    margin-left: auto;
+  }
+}

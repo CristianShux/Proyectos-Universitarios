@@ -1,0 +1,143 @@
+@keyframes fadeInAsistenciaUnica {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-asistencia-unica {
+  position: relative;
+  min-height: 100vh;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: transparent;
+}
+
+.form-asistencia-unica::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.form-asistencia-unica .form-container {
+  background-color: #ffffff;
+  padding: 30px 38px;
+  border-radius: 13px;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 520px;
+  box-sizing: border-box;
+  animation: fadeInAsistenciaUnica 0.6s ease forwards;
+}
+
+.form-asistencia-unica .asistencia-unica__titulo {
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 9px;
+  text-align: center;
+  color: var(--c1);
+  letter-spacing: 0.02em;
+}
+
+.form-asistencia-unica .asistencia-unica__subtitulo {
+  font-size: 14.5px;
+  color: #333;
+  margin-bottom: 22px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.form-asistencia-unica .cont-campos > div {
+  margin-bottom: 20px;
+}
+
+.form-asistencia-unica label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: var(--c1);
+  font-size: 14.8px;
+}
+
+.form-asistencia-unica .data-item--value,
+.form-asistencia-unica select,
+.form-asistencia-unica input[type="text"],
+.form-asistencia-unica input[type="time"],
+.form-asistencia-unica textarea {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1.2px solid #ccc;
+  border-radius: 7px;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: inherit;
+  background-color: #fafafa;
+  transition: border-color 0.25s ease;
+}
+
+.form-asistencia-unica .data-item--value:focus,
+.form-asistencia-unica textarea:focus,
+.form-asistencia-unica select:focus,
+.form-asistencia-unica input[type="time"]:focus {
+  border-color: var(--c1);
+  outline: none;
+  box-shadow: 0 0 5px var(--c1);
+}
+
+.form-asistencia-unica .react-datepicker-wrapper {
+  width: 100%;
+}
+
+.form-asistencia-unica .react-datepicker__input-container input {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1.2px solid #ccc;
+  border-radius: 7px;
+  font-size: 16px;
+  background-color: #fafafa;
+}
+
+.form-asistencia-unica .botones-formulario {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.8rem;
+}
+
+.form-asistencia-unica .botones-formulario button {
+  cursor: pointer;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.form-asistencia-unica .botones-formulario button[type="submit"] {
+  background-color: var(--c2);
+}
+
+.form-asistencia-unica .botones-formulario button[type="submit"]:hover {
+  background-color: var(--c1);
+}
+
+.form-asistencia-unica .botones-formulario button[type="button"] {
+  background-color: var(--c2);
+}
+
+.form-asistencia-unica .botones-formulario button[type="button"]:hover {
+  background-color: var(--c1);
+}
