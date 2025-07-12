@@ -1,0 +1,15 @@
+RegistrarHorario: Registrar entrada / salida  (la variable tipo es el vector)
+
+obtenerRegistros: Devuelve todas las jornadas (mensualmente o anualmente) de un empleado
+
+calcularHoras: Calcula las horas mensuales de un empleado
+
+actualizar datos empleados: actualizar datos de un empleado
+
+buscarEmpleados: Este era por dni (el otro era por id)
+
+
+
+RegistrarAsistenciaManual: se invoca cuando un admin registra entrada o salida manualmente
+
+
