@@ -1,0 +1,83 @@
+/*interface DataType {
+  id: number;
+  title: string;
+  body: string;
+}
+
+const API_URL = 'https://jsonplaceholder.typicode.com/posts';
+
+// GET request
+const getData = async (): Promise<DataType[]> => {
+  const response = await fetch(API_URL);
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  return await response.json();
+};
+
+// POST request
+const postData = async (data: Omit<DataType, 'id'>): Promise<DataType> => {
+  const response = await fetch(API_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  });
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  return await response.json();
+};
+
+// PUT request
+const updateData = async (id: number, data: Omit<DataType, 'id'>): Promise<DataType> => {
+    const response = await fetch(`${API_URL}/${id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    });
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+    return await response.json();
+};
+
+// DELETE request
+const deleteData = async (id: number): Promise<void> => {
+  const response = await fetch(`${API_URL}/${id}`, {
+    method: 'DELETE',
+  });
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+};
+
+// Usage example within a React component
+const MyComponent: React.FC = () => {
+    React.useEffect(() => {
+        // Example of GET request
+        getData().then(data => console.log('GET data:', data));
+
+        // Example of POST request
+        postData({ title: 'New Post', body: 'This is a new post.' })
+            .then(newData => console.log('POST data:', newData));
+
+        // Example of PUT request
+        updateData(1, { title: 'Updated Post', body: 'This post has been updated.' })
+            .then(updatedData => console.log('PUT data:', updatedData));
+
+        // Example of DELETE request
+        deleteData(1).then(() => console.log('Post 1 deleted'));
+    }, []);
+
+    return (
+        
+            Check the console for API responses.
+        
+    );
+};
+
+export default MyComponent;*/

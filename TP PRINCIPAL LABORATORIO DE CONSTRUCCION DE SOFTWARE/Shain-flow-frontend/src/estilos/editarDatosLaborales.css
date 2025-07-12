@@ -1,0 +1,128 @@
+.cont-datos-lab {
+  margin-left: 155px;
+}
+
+.cont-datos-laborales {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.datos {
+  padding: 20px 0;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--c1);
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* GRID para alinear mejor */
+.cont-datos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Item de cada campo */
+.data-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.data-item--label {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: var(--c1);
+}
+
+.data-item--value,
+.data-item select,
+.data-item input,
+.react-datepicker__input-container input {
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+  color: #222;
+}
+
+.data-item--value:focus,
+.data-item input:focus,
+.data-item select:focus {
+  outline: none;
+  border-color: var(--c1);
+  box-shadow: 0 0 6px var(--c1);
+}
+
+select {
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 40px;
+}
+
+.save-button {
+  padding: 12px 40px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  background-color: var(--c2);
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: var(--c1);
+}
+.cancel-button {
+  padding: 12px 40px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #eee;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cancel-button:hover {
+  background-color: #ddd;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .cont-datos-lab {
+    margin-left: 0;
+  }
+
+  .titulo {
+    font-size: 1.6rem;
+  }
+
+  .save-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,190 @@
+@keyframes fadeInAgregarJornada {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.agregar-jornada {
+  position: relative;
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: transparent;
+  z-index: 10; /* Añadido */
+}
+
+.agregar-jornada::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5; /* Menor que el contenedor y formulario */
+}
+
+.agregar-jornada .form-container {
+  background-color: #ffffff;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+  animation: fadeInAgregarJornada 0.6s ease forwards;
+  position: relative;  /* Añadido para z-index funcione */
+  z-index: 20;         /* Más arriba que el fondo */
+}
+
+.agregar-jornada .title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: center;
+  color: var(--c1); /* Color institucional */
+}
+
+.agregar-jornada .subtitle {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.agregar-jornada .cont-campos > div {
+  margin-bottom: 20px;
+}
+
+.agregar-jornada label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--c1); /* Color institucional */
+}
+
+.agregar-jornada .data-item--value,
+.agregar-jornada select,
+.agregar-jornada input[type="text"],
+.agregar-jornada textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: inherit;
+  background-color: #fafafa;
+  transition: border-color 0.2s;
+}
+
+.agregar-jornada .data-item--value:focus,
+.agregar-jornada textarea:focus,
+.agregar-jornada select:focus {
+  border-color: var(--c1); /* Color institucional al enfocar */
+  outline: none;
+}
+
+.agregar-jornada .react-datepicker-wrapper {
+  width: 100%;
+}
+
+.agregar-jornada .react-datepicker__input-container input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fafafa;
+  font-family: inherit;
+}
+
+.agregar-jornada span {
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+  display: block;
+}
+
+.agregar-jornada .botones-formulario {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.8rem;
+}
+
+.agregar-jornada .botones-formulario button {
+  cursor: pointer;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.agregar-jornada .botones-formulario button[type="submit"] {
+  background-color: var(--c2);
+}
+
+.agregar-jornada .botones-formulario button[type="submit"]:hover {
+  background-color: var(--c1);
+}
+
+.agregar-jornada .botones-formulario button[type="button"] {
+  background-color: var(--c2);
+}
+
+.agregar-jornada .botones-formulario button[type="button"]:hover {
+  background-color: var(--c1);
+}
+
+.agregar-jornada .react-datepicker__input-container input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fafafa;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.agregar-jornada .react-datepicker__input-container input:focus {
+  border-color: var(--c1);
+  outline: none;
+}
+
+/* Estilos para inputs numéricos (horas normales y extra) */
+.agregar-jornada input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.agregar-jornada input[type="number"]:focus {
+  border-color: var(--c1); /* Color institucional al enfocar */
+  outline: none;
+}
+
+/* Quitar flechas de incremento/decremento en Chrome, Edge, Safari */
+.agregar-jornada input[type="number"]::-webkit-outer-spin-button,
+.agregar-jornada input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

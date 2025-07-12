@@ -1,0 +1,144 @@
+.nav {
+  width: fit-content;
+  position: fixed;
+  z-index: 100;
+  background-color: #0056b3;
+  color: #fff;
+  padding: 10px;
+  box-shadow: 2px 0 3px #0056b3;
+  top: 0; /* Mantener en la parte superior por defecto */
+  left: 0;
+  /*height: 100vh;*/
+}
+
+.cont-nav {
+  width: 180px;
+  transition: width 0.3s ease;
+}
+
+.cont-nav.collapsed {
+  width: 40px;
+}
+
+.cont-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cont-nav ul li {
+  display: flex;
+}
+
+i {
+  font-size: 1.5em;
+}
+
+.navLink {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre ícono y texto */
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out, justify-content 0.3s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navLink:hover {
+  background-color: #f0f0f0;
+}
+
+.navLink.active {
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+}
+
+.navLink.collapsed {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+}
+
+.navLink span {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.navLink.collapsed span {
+  display: none;
+  opacity: 0;
+}
+
+.close {
+  color: #fff;
+  z-index: 200;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .nav {
+    top: auto; /* Desactiva la posición superior */
+    bottom: 0; /* Ubica el nav en la parte inferior */
+  }
+
+  .cont-nav {
+    text-align: center;
+    width: 40px;
+  }
+
+  .navLink {
+    text-align: center;
+    justify-content: center;
+    & i {
+      margin: 0;
+    }
+
+    & span {
+      display: none;
+    }
+  }
+
+  .close {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    top: auto; /* Desactiva la posición superior */
+    bottom: 0; /* Ubica el nav en la parte inferior */
+    height: auto; /* Ajusta la altura */
+    width: 100%; /* Ocupa todo el ancho */
+    box-shadow: none; /* Elimina la sombra cuando está en la parte inferior */
+    display: flex;
+    flex-direction: row; /* Alinea los ítems horizontalmente */
+    justify-content: center; /* Centra los ítems horizontalmente */
+  }
+
+  .cont-nav {
+    text-align: center;
+    width: 100%; /* Asegura que el contenedor del nav ocupe todo el ancho */
+    display: flex;
+    justify-content: center;
+  }
+
+  .cont-nav ul {
+    display: flex;
+    flex-direction: row; /* Alinea los ítems en una fila */
+    gap: 10px; /* Añade espacio entre los ítems */
+    justify-content: center; /* Centra los ítems horizontalmente */
+  }
+
+  .navLink {
+    justify-content: center; /* Centra el contenido de cada enlace */
+  }
+
+  .close {
+    display: none;
+  }
+}

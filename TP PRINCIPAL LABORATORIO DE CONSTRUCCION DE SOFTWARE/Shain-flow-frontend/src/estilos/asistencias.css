@@ -1,0 +1,259 @@
+.layout {
+  min-height: 100dvh;
+  margin-left: 145px;
+}
+.cont-asistencias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: .5rem;
+
+  & h2 {
+    font-size: 2em;
+    margin: .5em 1.5em;
+    text-transform: uppercase;
+    color: var(--c1);
+  }
+
+  & h3 {
+    text-align: justify;
+    /*margin: .5em 2em;*/
+  }
+
+  & .asistencias {
+    box-shadow: 0 0 5px rgba(0, 0, 0);
+    max-height: 550px;
+    overflow-y: auto;
+    margin: 0 3em;
+  }
+
+  & table {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  
+  & thead {
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+
+  & th {
+    width: 200px;
+    background-color: var(--c1);
+    color: #fff;
+    padding: 1rem;
+    font-weight: bold;
+    border-bottom: 1px solid #333;
+    text-align: center;
+  }
+  & td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    text-align: center;
+
+    &:first-child {
+      border-left: none;
+    }
+
+    &:hover {
+      background-color: #f1f1f1;
+    }
+  }
+}
+.col-fecha {
+  width: 80px;
+  text-align: center;
+}
+
+.col-dia {
+  width: 90px;
+  text-align: center;
+}
+
+.col-he,
+.col-hs,
+.col-ht,
+.col-hex {
+  width: 60px;
+  text-align: center;
+}
+
+th, td {
+  padding: 4px 6px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.completa {
+  background-color: #05ff3f;
+  color: #155724;
+  font-weight: bold;
+}
+.incompleta {
+  background-color: #ebd405;
+  color: #6e6702;
+  font-weight: bold;
+}
+.comp-he {
+  background-color: #88f4a1;
+  color: #155724;
+  font-weight: bold;
+}
+.falta, .licencia-medica, .vacaciones, .suspension, .no-laboral, .otra {
+  background-color: #ff7c7c;
+  color: #a00303;
+  font-weight: bold;
+}
+.leyenda-abreviaciones {
+  display: flex;
+  gap: 2rem; /* espacio entre cada elemento */
+  flex-wrap: wrap; /* permite que baje a otra línea si no entra */
+  font-size: 1.1rem; /* tamaño de letra más grande */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.leyenda-abreviaciones li {
+  display: flex;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 900px) {
+  .cont-asistencias {
+    & h2 {
+      font-size: 1.7em;
+    }
+  
+    & h3 {
+      font-size: 1.4em;
+      margin: 0;
+      /*margin-left: 2em;*/
+    }
+  
+    & .asistencias {
+      margin: 0;
+      /*margin-left: 3em;*/
+    }
+    & th {
+      width: 150px;
+      padding: .8rem;
+    }
+    & td {
+      padding: .8rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .layout {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .cont-asistencias {
+    & h2 {
+      font-size: 1.5em;
+    }
+  
+    & h3 {
+      font-size: 1.2em;
+    }
+  
+    & th {
+      padding: .3em;
+    }
+    & td {
+      padding: .5em;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .cont-asistencias {
+    margin-bottom: 3em;
+    & h3 {
+      margin: 0;
+    }
+    & .asistencias {
+      margin: 0;
+    }
+  }
+  .layout {
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cont-asistencias {
+    padding: .5rem;
+    gap: 0.3rem;
+
+    & h2 {
+      font-size: 1.2em;
+      text-align: center;
+      margin: 0.5em 0;
+    }
+
+    & h3 {
+      font-size: 1em;
+      text-align: justify;
+      margin: 0.5em 0;
+    }
+
+    .leyenda-abreviaciones {
+      font-size: 0.9rem;
+      gap: 1rem;
+    }
+
+    .asistencias {
+      box-shadow: none;
+      overflow: visible;
+    }
+
+    /* Ocultar encabezado */
+    table thead {
+      display: none;
+    }
+
+    /* Mostrar filas como tarjetas verticales */
+    table, tbody, tr, td {
+      display: block;
+      width: 100%;
+    }
+
+    tr {
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 0.5rem;
+      background-color: #f9f9f9;
+    }
+
+    td {
+      text-align: left;
+      padding: 0.3rem 0.3rem;
+      font-size: 1rem;
+      border: none;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+    }
+
+    td:last-child {
+      border-bottom: none;
+    }
+
+    td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: inline-block;
+      width: 120px;
+      color: #333;
+    }
+  }
+}

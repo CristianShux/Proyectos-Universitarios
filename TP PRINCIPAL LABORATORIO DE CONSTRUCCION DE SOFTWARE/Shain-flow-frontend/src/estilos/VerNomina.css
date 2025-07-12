@@ -1,0 +1,90 @@
+.ver-nomina-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+  margin-left: 165px;
+}
+
+.ver-nomina-wrapper {
+  position: relative;
+  border: 1px solid black;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  /*width: 70%;*/
+  margin-bottom: 75px;
+}
+
+.nomina-section {
+  border: 1px solid black;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px 10px 10px 10px;
+}
+
+.tabla-wrapper {
+  overflow-x: auto;
+}
+
+.tabla-nomina {
+  width: 100%;
+  min-width: 300px;
+  border-collapse: collapse;
+}
+
+.tabla-nomina th,
+.tabla-nomina td {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+    .ver-nomina-container {
+        margin-left: 30px;
+        width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .ver-nomina-container {
+        margin-left: auto;
+    }
+
+    .ver-nomina-wrapper {
+        margin-left: auto;
+        width: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .ver-nomina-container {
+        display: block;
+            /*position: absolute;*/
+    }
+
+    .nomina-section {
+        padding: 8px;
+        border-radius: 5px;
+        margin: 10px 5px 5px 5px;
+    }
+
+    /*.tabla-wrapper {
+        overflow-x: auto;
+    }
+
+    .tabla-nomina {
+        width: 100%;
+        min-width: auto;
+        border-collapse: collapse;
+    }*/
+
+    .tabla-nomina th,
+    .tabla-nomina td {
+        padding: 2px;
+        border-bottom: 1px solid #ccc;
+        text-align: left;
+    }
+}

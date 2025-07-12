@@ -1,0 +1,338 @@
+.calcular-nomina-container {
+  max-width: 900px;
+  margin: 40px auto 80px;
+  padding: 30px 25px;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calcular-nomina-title {
+  color: var(--c1);
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.calcular-nomina-error {
+  color: #d32f2f;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.calcular-nomina-form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.calcular-nomina-form-group label {
+  flex-shrink: 0;
+  font-weight: 700;
+  color: var(--c1);
+  min-width: 120px;
+}
+
+.calcular-nomina-select {
+  flex-grow: 1;
+  padding: 8px 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  color: #222;
+}
+
+.calcular-nomina-select:focus {
+  outline: none;
+  border-color: var(--c1);
+  box-shadow: 0 0 6px var(--c1);
+}
+
+.calcular-nomina-btn-calcular {
+  display: block;
+  margin: 0 auto 30px;
+  background-color: var(--c2);
+  color: #fff;
+  border: none;
+  padding: 12px 42px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease;
+}
+
+.calcular-nomina-btn-calcular:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.calcular-nomina-btn-calcular:hover:not(:disabled) {
+  background-color: var(--c1);
+}
+
+.calcular-nomina-calculada-container {
+  background-color: #fafafa;
+  border: 2px solid var(--c2);
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  color: #444;
+  font-size: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.calcular-nomina-calculada-container h3 {
+  margin-bottom: 18px;
+  color: var(--c2);
+  font-weight: 700;
+}
+
+.calcular-nomina-calculada-container p {
+  margin: 8px 0;
+  font-weight: 600;
+}
+
+.calcular-nomina-recibos-titulo {
+  color: var(--c1);
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+}
+
+
+.calcular-nomina-recibos-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: inherit;
+  min-width: 600px; /* para forzar scroll horizontal si ventana es chica */
+}
+
+.calcular-nomina-recibos-table thead {
+  position: sticky;
+  top: 0;
+  background-color: var(--c1);
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  /* Forzar que el fondo cubra todo */
+  background-clip: padding-box;
+}
+
+
+.calcular-nomina-recibos-table th,
+.calcular-nomina-recibos-table td {
+  padding: 14px 18px;
+  text-align: center;
+  border-bottom: 1.5px solid #ddd;
+  font-size: 1rem;
+  color: #222;
+}
+
+/* Filas pares con otro fondo */
+.calcular-nomina-recibos-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Columna Acciones sin posición sticky, se mueve con el scroll */
+.calcular-nomina-recibos-table th:last-child,
+.calcular-nomina-recibos-table td:last-child {
+  position: static;
+  background-color: transparent;
+  box-shadow: none;
+  border-left: none;
+  min-width: auto;
+}
+
+/* Mensaje tabla vacía */
+.calcular-nomina-recibos-table-empty {
+  font-style: italic;
+  color: #999;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.calcular-nomina-recibos-table-container {
+  border-collapse: collapse;
+}
+/* Botones ver y descargar */
+.calcular-nomina-recibos-btn-ver,
+.calcular-nomina-recibos-btn-descargar {
+  text-transform: none;
+  font-weight: 600;
+  background-color: transparent;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Botón VER (color var --c2) */
+.calcular-nomina-recibos-btn-ver {
+  color: var(--c2);
+  border: 2px solid var(--c2);
+}
+
+.calcular-nomina-recibos-btn-ver:hover {
+  background-color: var(--c2);
+  color: #fff;
+}
+
+/* Botón DESCARGAR (color var --c3) */
+.calcular-nomina-recibos-btn-descargar {
+  color: var(--c3);
+  border: 2px solid var(--c3);
+}
+
+.calcular-nomina-recibos-btn-descargar:hover {
+  background-color: var(--c3);
+  color: #fff;
+}
+
+modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 900px;
+  width: 95%;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  position: relative;
+}
+
+.cerrar-modal {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.calcular-nomina-descargas-box {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.calcular-nomina-descargas-box button {
+  border: 2px solid var(--c3);
+  background-color: #fff;
+  color: var(--c3);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.calcular-nomina-descargas-box button:hover {
+  background-color: var(--c3);
+  color: white;
+}
+
+/* Animación fadeIn para la nómina calculada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+
+
+@media screen and (max-width: 768px) {
+  .calcular-nomina-recibos-table,
+  .calcular-nomina-recibos-table thead,
+  .calcular-nomina-recibos-table tbody,
+  .calcular-nomina-recibos-table th,
+  .calcular-nomina-recibos-table td,
+  .calcular-nomina-recibos-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .calcular-nomina-recibos-table {
+      min-width: auto;
+    }
+
+  .calcular-nomina-recibos-table thead {
+    display: none;
+  }
+
+  .calcular-nomina-recibos-table tr {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+  }
+
+  .calcular-nomina-recibos-table td {
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .calcular-nomina-recibos-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    font-weight: 700;
+    color: var(--c1);
+    width: 45%;
+    white-space: nowrap;
+  }
+
+  .fila-descarga-extra td {
+    padding-left: 0 !important;
+  }
+
+  .calcular-nomina-descargas-box {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .calcular-nomina-descargas-box button {
+    width: 100%;
+  }
+}

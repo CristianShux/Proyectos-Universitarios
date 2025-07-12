@@ -1,0 +1,188 @@
+:root {
+  --c1-editar-datos-laborales: #fc625d; /* rojo vivo personalizado */
+  --c2-editar-datos-laborales: rgb(158, 32, 3); /* rojo oscuro personalizado */
+  --c3-editar-datos-laborales: #737373;
+}
+
+.container-personal-data-edit {
+  display: flex;
+  /*justify-content: center;
+  align-items: center;*/
+  /*min-height: 100vh;*/
+  padding: 20px;
+  margin-left: 165px;
+}
+
+.personal-data-edit {
+  width: 100%;
+  max-width: 800px;  /* Controla el ancho máximo */
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative; /* Necesario para que el botón se posicione relativo a este contenedor */
+}
+
+.editar-datos-laborales-container {
+  display: flex;
+  /*justify-content: center;
+  align-items: center;
+  min-height: 100vh;*/
+  padding: 20px;
+  /*margin-left: 5px;  si quieres menos margen a la izquierda para ganar espacio */
+}
+
+.editar-datos-laborales-card {
+  width: 100%;
+  max-width: 1000px; /* aumenté de 1000px a 1200px */
+  padding: 2em 3em;  /* un poco más de padding horizontal */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.editar-datos-laborales-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5em;
+  color: var(--c1-editar-datos-laborales);
+  text-transform: uppercase;
+}
+
+.editar-datos-laborales-data-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.editar-datos-laborales-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.editar-datos-laborales-item {
+  width: 48%;
+}
+
+.editar-datos-laborales-label {
+  font-weight: bold;
+  color: var(--c1-editar-datos-laborales);
+  text-align: left;
+}
+
+.editar-datos-laborales-input {
+  width: 100%;
+  color: #555;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  padding: 0.5em 0;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background-color: transparent;
+}
+
+.editar-datos-laborales-input:focus {
+  border-color: var(--c1-editar-datos-laborales);
+}
+
+.editar-datos-laborales-input.editable {
+  border-color: var(--c2-editar-datos-laborales);
+}
+
+.editar-datos-laborales-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.editar-datos-laborales-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.editar-datos-laborales-btn.guardar {
+  background-color: var(--c1-editar-datos-laborales);
+  color: white;
+}
+
+.editar-datos-laborales-btn.guardar:hover {
+  background-color: var(--c2-editar-datos-laborales);
+}
+
+.editar-datos-laborales-btn.cancelar {
+  background-color: #dc3545;
+  color: white;
+}
+
+.editar-datos-laborales-btn.cancelar:hover {
+  background-color: #c82333;
+}
+
+.editar-datos-laborales-btn.editar {
+  background-color: var(--c1);
+  color: white;
+  /* otras propiedades */
+}
+
+.editar-datos-laborales-btn.editar:hover {
+  background-color: var(--c2-editar-datos-laborales);
+}
+
+@media (max-width: 800px) {
+  .container-personal-data-edit{
+    margin-left: 25px;
+  }
+
+  .editar-datos-laborales-container {
+    margin-left: auto;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .editar-datos-laborales-card {
+    margin-left: auto;
+    width: auto;
+  }
+}
+
+@media (max-width: 765px) {
+  .editar-datos-laborales-card {
+    margin: 0 auto;
+    margin-bottom: 2em;
+    width: 90%;
+  }
+
+  .editar-datos-laborales-item {
+    width: 100%;
+  }
+
+  .editar-datos-laborales-btn.guardar {
+    font-size: 0.9rem;
+    padding: 0.8em 1.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-personal-data-edit{
+    padding: 10px;
+    margin-left: auto;
+    margin-bottom: 2.5rem;
+  }
+  .personal-data-edit{
+    padding: 10px;
+  }
+
+  .editar-datos-laborales-card {
+    width: 100%;
+    padding: 10px;
+  }
+}

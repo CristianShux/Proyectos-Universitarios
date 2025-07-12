@@ -1,0 +1,129 @@
+.cont-confirmacion {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em; /* Añadir algo de padding para evitar que los elementos toquen los bordes */
+}
+
+.confirmacion {
+  padding: 3em;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%; /* Asegurar que ocupe todo el ancho disponible */
+  max-width: 600px; /* Limitar ancho en pantallas grandes */
+}
+.confirmacion__titulo--h1 {
+  color: var(--c1);
+  text-transform: uppercase;
+}
+.confirmacion__titulo--h1,
+.confirmacion__titulo--p {
+  text-align: center;
+}
+
+p {
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.cont {
+  width: 100%; /* Asegurar que las columnas ocupen el 100% en móviles */
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row; /* Mantener los iconos y el texto alineados horizontalmente */
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1em;
+}
+
+.cont i {
+  font-size: 2rem;
+  margin-right: 1em;
+}
+
+.bold {
+  font-weight: bold;
+  color: var(--c1);
+}
+
+.cont-botones {
+  margin: auto;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.cont-botones button {
+  width: 200px;
+  margin: 0 1em;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--c1);
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cont-botones button:hover {
+  background-color: #0056b3;
+}
+
+/* MEDIA QUERIES PARA DISPOSITIVOS MOVILES */
+@media (max-width: 768px) {
+  .confirmacion {
+    padding: 2em;
+    width: 80%; /* Asegurar que ocupe todo el ancho disponible */
+  }
+
+  .cont {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .cont i {
+    margin-bottom: 1em; /* Espaciado entre el ícono y el texto */
+  }
+
+  .cont-botones {
+    flex-direction: column; /* Asegurarse de que los botones estén apilados */
+    align-items: center;
+  }
+
+  .cont-botones button {
+    width: 100%; /* Hacer que los botones ocupen todo el ancho disponible */
+    margin: 10px 0; /* Separar los botones */
+  }
+
+  .bold {
+    font-size: 1.1rem; /* Reducir el tamaño de la fuente en móviles */
+  }
+
+  p {
+    font-size: 1.1rem; /* Reducir el tamaño de la fuente en móviles */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .confirmacion {
+    padding: 1em;
+    gap: .5em;
+    width: 100%; /* Asegurar que ocupe todo el ancho disponible */
+  }
+  .confirmacion__titulo--h1 {
+    font-size: 1.7em;
+  }
+  .cont {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}

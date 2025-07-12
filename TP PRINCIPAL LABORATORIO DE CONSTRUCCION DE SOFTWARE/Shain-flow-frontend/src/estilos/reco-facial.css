@@ -1,0 +1,314 @@
+/* Estructura base */
+.contenedor-reconocimiento {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  text-align: center;
+}
+
+/* Logo */
+.logo-container {
+  margin-bottom: 1em;
+}
+.logo-container img {
+  max-width: 300px;
+  min-width: 200px;
+  margin: 0 auto;
+}
+
+/* Contenido principal */
+.contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 2em;
+  position: relative;
+}
+.seccion-camara {
+  width: 100%;
+  min-width: 300px;
+}
+/* Cámara */
+.seccion-camara .camara {
+  width: 100%;
+  max-width: 300px;
+  min-width: 250px;
+  background-image: url("/usuario.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+.mensaje-guia {
+  font-weight: 700;
+  max-width: 400px;
+  margin: 1em auto;
+}
+.boton-reconocimiento {
+  background-color: #d61103;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1.1em;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+.boton-reconocimiento:hover {
+  background-color: #a50d02;
+  transform: scale(1.05);
+}
+.boton-reconocimiento:active {
+  transform: scale(0.95);
+}
+.seccion-derecha {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+/* Alternativa */
+.seccion-alternativa {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.seccion-alternativa span {
+  font-weight: 700;
+}
+
+.camara-inactiva {
+  transform: translateX(-150%);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.camara-activa {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+/* Animación de entrada para la sección derecha */
+.seccion-derecha {
+  transition: all 1s ease;
+}
+
+.derecha-inicial {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90vw;
+  z-index: 10;
+}
+
+.derecha-activa {
+  position: static;
+  transform: none;
+  max-width: 400px;
+  z-index: auto;
+}
+
+/* Versión desktop */
+@media (min-width: 900px) {
+  .contenido {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .seccion-camara, .seccion-alternativa {
+    flex: 1;
+    max-width: 60%;
+  }
+
+  .seccion-alternativa {
+    text-align: center;
+    transition: all 1s ease;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .seccion-camara .camara {
+    min-width: 500px;
+    max-width: 700px;
+    height: 700px;
+  }
+ 
+}
+.seccion-camara .camara {
+  width: 100%;
+  max-width: 500px;
+  min-width: 250px;
+  height: 400px;
+  background-image: url("/usuario.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+@media (width <= 450px) {
+  .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+  .contenido {
+    gap: 1.2em; /* menos espacio entre elementos */
+    padding: 0 1em; /* reduce el padding horizontal si aplica */
+  }
+
+  .seccion-camara {
+    min-width: 240px;
+  }
+
+  .seccion-camara .camara {
+    max-width: 300px;
+    min-width: 200px;
+    height: 300px;
+    border: none;
+    box-shadow: 0 0 20px #a50d02;
+  }
+
+  .estado-reconocimiento {
+    font-size: 0.85em;
+    margin-bottom: 0.5em;
+  }
+
+  .mensaje-guia {
+    font-size: 0.9em;
+    margin: 0.8em auto;
+    padding: 0 0.5em;
+  }
+
+  .boton-reconocimiento {
+    padding: 8px 12px;
+    font-size: 0.95em;
+    border-radius: 10px;
+  }
+
+  .seccion-derecha {
+    gap: 0.8em;
+  }
+
+  .seccion-alternativa span {
+    font-size: 0.9em;
+  }
+}
+
+/* Versión desktop */
+@media (min-width: 850px) {
+  .contenido {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .seccion-camara,
+  .seccion-alternativa {
+    flex: 1;
+    max-width: 60%;
+  }
+
+  .seccion-camara {
+    min-width: 500px;
+  }
+
+  .seccion-alternativa {
+    text-align: center;
+  }
+
+  .seccion-camara .camara {
+    min-width: 500px;
+    max-width: 700px;
+    height: 700px;
+  }
+}
+
+.estado-reconocimiento {
+  text-align: center;
+  margin-bottom: 1em;
+  animation-name: expand;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.seccion-derecha {
+  transition: all 1s ease;
+  max-width: 900px;
+}
+
+.derecha-inicial {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90vw;
+  z-index: 10;
+}
+
+.derecha-activa {
+  position: static;
+  transform: none;
+  max-width: 400px;
+  z-index: auto;
+}
+
+@keyframes expand {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.1;
+  }
+}
+/* Transiciones generales */
+.seccion-camara,
+.seccion-derecha {
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+/* Mobile: efectos de entrada vertical */
+/* Solo aplica en modo mobile */
+@media (max-width: 849px) {
+  .seccion-camara,
+  .seccion-derecha {
+    transition: transform 0.8s ease;
+    position: relative;
+    width: 100%;
+  }
+
+  .camara-oculta {
+    transform: translateY(-100vh);
+  }
+
+  .camara-activa {
+    transform: translateY(0);
+  }
+
+  .derecha-movil-centro {
+    transform: translateY(-25vh);
+  }
+
+  .derecha-movil-abajo {
+    transform: translateY(0); /* Ajusta el desplazamiento según lo que necesites */
+  }
+}

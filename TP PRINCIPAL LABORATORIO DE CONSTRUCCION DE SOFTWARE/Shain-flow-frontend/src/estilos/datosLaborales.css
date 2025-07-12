@@ -1,0 +1,343 @@
+.cont-datos-lab {
+  margin-left: 175px;
+}
+
+.cont-datos-laborales {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 40px 50px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.datos {
+  padding: 20px 0;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--c1);
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* GRID para alinear mejor */
+.cont-datos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Item de cada campo */
+.data-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.data-item--label {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: var(--c1);
+}
+
+.data-item--value,
+.data-item select,
+.data-item input,
+.react-datepicker__input-container input {
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+  color: #222;
+}
+
+.data-item--value:focus,
+.data-item input:focus,
+.data-item select:focus {
+  outline: none;
+  border-color: var(--c1);
+  box-shadow: 0 0 6px var(--c1);
+}
+
+select {
+  cursor: pointer;
+}
+
+/* Contenedor para últimos recibos */
+.cont-recibos {
+  max-width: 1000px;
+  margin: 40px auto 80px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+/* Título del bloque recibos */
+.cont-recibos__title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--c1);
+}
+
+/* Contenedor de la tabla, con posición para overlay */
+.cont-recibos__table {
+  position: relative;
+  overflow-x: auto;
+  border-radius: 14px;
+}
+
+/* Tabla responsive y estilo general */
+.cont-recibos__table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: inherit;
+}
+
+.cont-recibos__table th,
+.cont-recibos__table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1.5px solid #ddd;
+  font-size: 1rem;
+  color: #222;
+}
+
+/* Encabezado tabla */
+.cont-recibos__table th {
+  background-color: var(--c1);
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Filas alternas */
+.cont-recibos__table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.visor-pdf-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visor-pdf-modal {
+  position: relative;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.visor-pdf-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.visor-pdf-frame {
+  width: 100%;
+  height: 75vh;
+  border: none;
+}
+
+/* Base de todos los botones */
+.nomina-btn-ver,
+.nomina-btn-descargar {
+  text-transform: none;
+  font-weight: 600;
+  background-color: #fff;
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border: 2px solid;
+  display: inline-block;
+}
+
+.nomina-btn-ver {
+  color: var(--c2);
+  border-color: var(--c2);
+}
+
+.nomina-btn-ver:hover {
+  background-color: var(--c2);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive: tabla se adapta a pantallas chicas */
+@media screen and (max-width: 768px) {
+  .cont-datos-lab {
+    margin-left: 0;
+  }
+
+  .titulo {
+    font-size: 1.6rem;
+  }
+
+  .cont-recibos__table table,
+  .cont-recibos__table thead,
+  .cont-recibos__table tbody,
+  .cont-recibos__table th,
+  .cont-recibos__table td,
+  .cont-recibos__table tr {
+    display: block;
+  }
+
+  .cont-recibos__table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .cont-recibos__table tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .cont-recibos__table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  .cont-recibos__table td::before {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: 700;
+    content: attr(data-label);
+    color: var(--c1);
+  }
+}
+
+.datos-laborales-box {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 40px 50px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.datos-laborales-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.datos-laborales-content {
+  filter: none;
+  transition: filter 0.3s ease;
+}
+
+.datos-laborales-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--c1);
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.datos-laborales-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.datos-laborales-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.datos-laborales-item .label {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: var(--c1);
+}
+
+.datos-laborales-item .value {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+  color: #222;
+  font-family: inherit;
+  text-align: center;
+}
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .cont-datos-lab {
+    margin-left: 0;
+  }
+
+  .titulo {
+    font-size: 1.6rem;
+  }
+
+  .save-button {
+    width: 100%;
+  }
+}

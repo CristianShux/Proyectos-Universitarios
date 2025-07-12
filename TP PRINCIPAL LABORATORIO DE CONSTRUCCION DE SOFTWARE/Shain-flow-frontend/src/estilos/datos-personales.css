@@ -1,0 +1,308 @@
+.container-personal-data {
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  /*min-height: 100vh;*/
+  padding: 20px;
+  margin-left: 165px;
+}
+
+.personal-data {
+  width: 100%;
+  max-width: 800px;  /* Controla el ancho máximo */
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative; /* Necesario para que el botón se posicione relativo a este contenedor */
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5em;
+  color: var(--c1);
+  text-transform: uppercase;
+}
+
+.data-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.data-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.data-item {
+  width: 48%; /* Cada ítem ocupará el 48% del ancho del contenedor */
+}
+
+.data-item--label {
+  font-weight: bold;
+  color: var(--c1);
+}
+
+.data-item--value {
+  color: #555;
+}
+
+/* Estilo del botón de edición */
+.edit-button {
+  position: relative;
+  bottom: -5px;   /* Fija el botón en la parte inferior */
+  right: 10px;    /* Fija el botón a la derecha */
+  background-color: var(--c2);  /* Color celeste */
+  color: white;
+  font-size: 1rem;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: var(--c1);  /* Cambio de color en hover */
+}
+
+.data-item--label {
+  text-align: left;
+}
+@media (max-width: 900px) {
+  .personal-data {
+    /*margin-left: 4em;*/
+    width: 80%;
+  }
+
+  .data-item {
+    width: 45%; /* Cada ítem ocupará el 48% del ancho del contenedor */
+  }
+}
+
+@media (max-width: 800px){
+  .personal-data {
+    width: auto;
+    padding: 2%;
+  }
+  .container-personal-data {    
+    margin-left: 30px;
+  }
+  
+}
+
+@media (max-width: 765px) {
+  .personal-data {
+    margin: 0;
+    margin-bottom: 2em;
+    width: 80%;
+  }
+  .data-item {
+    width: 100%;
+  }
+
+  .edit-button {
+    font-size: 0.9rem;
+    padding: 0.8em 1.5em;
+  }
+}
+/* Botones debajo de la información */
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 10px;
+}
+
+.edit-button, .save-button, .cancel-button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button {
+  background-color: var(--c1);
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: var(--c2);
+}
+
+.save-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.save-button:hover {
+  background-color: #218838;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #c82333;
+}
+/* Estilos generales para los inputs */
+.data-item--value {
+  border: none;
+  border-bottom: 2px solid transparent; /* Borde inferior invisible por defecto */
+  outline: none;
+  padding: 0.5em 0;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+/* Borde inferior celeste cuando los inputs están en modo editables */
+.data-item--value:focus {
+  border-color: var(--c1); /* Celeste */
+}
+
+/* Borde inferior celeste al presionar el botón Modificar Información */
+.data-item--value.editable {
+  border-color: var(--c2); /* Celeste */
+}
+.tabs-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--c1);
+  background-color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--c1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  background-color: var(--c2);
+  color: white;
+}
+
+.tab.active {
+  background-color: var(--c1);
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6); /* fondo difuminado */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  backdrop-filter: blur(3px); /* difuminado extra si querés */
+}
+.boton-opcion {
+  padding: 8px 16px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 0.95rem;
+}
+
+.boton-opcion:hover {
+  background-color: #e0e0e0;
+}
+
+.menu-opciones {
+  position: absolute;
+  width: max-content;
+  top: -100px;
+  right: -20%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.opcion-menu {
+  padding: 10px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.opcion-menu:hover {
+  background-color: #f8f8f8;
+}
+.opcion-menu:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.foto-perfil {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #ccc;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.cont-img-perfil {
+  position: absolute;
+  top: -20px;
+  right: -200px;
+  margin-right: 50px;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .container-personal-data{
+    margin-left: auto;
+    padding: 5px;
+    margin-top: 5px;
+    bottom: 2rem;
+  }
+
+  .personal-data{
+    padding: 10px;
+    width: auto;
+  }
+  .cont-img-perfil {
+    top: 105px;
+    right: 0px;
+  }
+
+  .data-container {
+    margin-top: 250px
+  }
+}
+@media (width <= 400px) {
+  .container-personal-data {
+    padding: 1em 0;
+  }
+}

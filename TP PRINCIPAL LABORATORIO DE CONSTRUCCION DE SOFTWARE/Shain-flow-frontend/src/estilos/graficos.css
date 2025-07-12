@@ -1,0 +1,68 @@
+.funnel-container {
+  width: 100%;
+  height: 400px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.funnel-container h2 {
+  text-align: center;
+}
+
+.funnel-container p {
+  text-align: center;
+  color: #6b7280;
+}
+
+.funnel-header {
+  background-color: #c82333;
+  color: white;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  margin: auto
+}
+
+.funnel-chart-wrapper {
+  width: 80%;
+  height: 80%;
+  padding: 10px;
+  margin: auto;
+}
+
+.funnel-label {
+  width: '150px';
+  text-align: 'center';
+    
+}
+
+.funnel-label p {
+  border-bottom: 2px solid transparent;
+  border-color: #c82333;
+  text-align: center;
+  color: #777;
+  font-size: small;
+}
+
+
+.funnel-label h4, .funnel-label h2 {
+  text-align: center;
+  font-size: small;
+}
+
+.funnel-header h2, p {
+  text-align: center;
+}
+
+.titulo {
+    text-align: 'center' 
+}

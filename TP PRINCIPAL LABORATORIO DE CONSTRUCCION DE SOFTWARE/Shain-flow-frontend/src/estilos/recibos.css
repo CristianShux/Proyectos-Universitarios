@@ -1,0 +1,273 @@
+.nomina-tabla-contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nomina-tabla {
+  width: 100%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 6px 18px rgba(241, 237, 237, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.nomina-tabla thead {
+  background-color: var(--c1);
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nomina-tabla-header-row {
+  border-bottom: 2px solid #ddd;
+}
+
+.nomina-tabla-header-cell,
+.nomina-tabla-cell {
+  padding: 14px 18px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.nomina-tabla-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.nomina-titulo-recibos {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 1.8rem;
+  font-weight: 700px;
+  color: var(--c2);
+  letter-spacing: 0.04em;
+}
+
+.nomina-tabla-empty-row {
+  background-color: #fff3f3;
+}
+
+.nomina-tabla-empty-cell {
+  padding: 20px;
+  font-style: italic;
+  color: #999;
+  text-align: center;
+}
+
+.nomina-detalle-row {
+  background-color: #fdfdfd;
+}
+
+.nomina-detalle-cell {
+  padding: 0 !important;
+  border: none !important;
+}
+
+.nomina-detalle-contenido {
+  padding: 18px 24px;
+  background-color: #fff;
+  border-left: 4px solid var(--c2);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 0 0 12px 12px;
+  font-size: 0.95rem;
+  color: #444;
+  animation: fadeIn 0.25s ease-in;
+}
+
+.nomina-detalle-contenido p {
+  margin: 6px 0;
+}
+
+.nomina-detalle-descuentos-list {
+  list-style-type: disc;
+  padding-left: 22px;
+  margin: 6px 0 14px;
+  color: #555;
+}
+
+.nomina-detalle-botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+  justify-content: center;
+}
+
+.nomina-btn-vermas,
+.nomina-btn-descargar {
+  text-transform: none;
+  font-weight: 600;
+  color: var(--c2);
+  border: 2px solid var(--c2);
+  background-color: transparent;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.nomina-btn-vermas:hover,
+.nomina-btn-descargar:hover {
+  background-color: var(--c2);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Scrollbar custom (opcional) */
+.nomina-tabla-contenedor::-webkit-scrollbar {
+  height: 8px;
+}
+.nomina-tabla-contenedor::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+.nomina-tabla-contenedor::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+/* Responsive tabla */
+@media screen and (max-width: 800px) {
+  .nomina-tabla,
+  .nomina-tabla thead,
+  .nomina-tabla tbody,
+  .nomina-tabla th,
+  .nomina-tabla td,
+  .nomina-tabla tr {
+    display: block;
+  }
+
+  .nomina-tabla thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .nomina-tabla tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .nomina-tabla td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  .nomina-tabla td::before {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: 700;
+    content: attr(data-label);
+    color: var(--c1);
+  }
+
+  .nomina-detalle-botones {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nomina-titulo-recibos {
+    font-size: 1.8rem;
+  }
+
+  .cont-datos-lab {
+    margin-left: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cont-datos-lab {
+    margin-left: auto;
+  }
+
+      .nomina-tabla td {
+        padding-left: 0;
+    }
+}
+
+.botones-edicion {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.btn-modificar,
+.btn-guardar,
+.btn-cancelar {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-modificar {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.btn-guardar {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.btn-cancelar {
+  background-color: #757575;
+  color: white;
+}
+
+.btn-modificar:hover {
+  background-color: #b71c1c;
+}
+
+.btn-guardar:hover {
+  background-color: #1b5e20;
+}
+
+.btn-cancelar:hover {
+  background-color: #616161;
+}
+
+.center {
+  text-align: center;
+}
+
+.react-datepicker-wrapper {
+  width: 100% !important;
+}
+
+.react-datepicker__input-container {
+  width: 100% !important;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  text-align: center; /* opcional */
+}
+
+
+/* Animación suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
