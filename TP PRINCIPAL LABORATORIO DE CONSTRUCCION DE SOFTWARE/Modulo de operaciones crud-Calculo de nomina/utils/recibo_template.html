@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        font-size: 12px;
+        margin: 40px;
+        color: #000;
+      }
+      .encabezado {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #000;
+        padding-bottom: 8px;
+        margin-bottom: 10px;
+      }
+      .empresa-info {
+        font-size: 10px;
+        line-height: 1.3;
+      }
+      .empresa-info strong {
+        font-size: 12px;
+      }
+      .titulo {
+        text-align: right;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .datos-empleado,
+      .detalle,
+      .totales {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 16px;
+      }
+      .datos-empleado td,
+      .detalle td,
+      .detalle th,
+      .totales td {
+        border: 1px solid #000;
+        padding: 6px 8px;
+      }
+      .detalle th {
+        background-color: #f0f0f0;
+      }
+      .subtitulo {
+        margin-top: 25px;
+        font-weight: bold;
+        font-size: 13px;
+      }
+      .text-right {
+        text-align: right;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .firma {
+        margin-top: 50px;
+        text-align: center;
+      }
+      .firma img {
+        height: 45px;
+      }
+      .firma p {
+        margin-top: 4px;
+      }
+      .resaltado {
+        background-color: #e6e6e6;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="encabezado">
+      <div class="empresa-info">
+        <img
+          src="{{ logo_path }}"
+          alt="Logo"
+          style="height: 50px"
+        /><br />
+        <strong>Mirai HR Solutions</strong><br />
+        Av. Leandro N. Alem 1589 (1001), CABA<br />
+        CUIT: 30-12345678-9
+      </div>
+      <div class="titulo">
+        RECIBO DE HABERES - Ley Nº 20.744<br />
+        DUPLICADO
+      </div>
+    </div>
+
+    <table class="datos-empleado">
+      <tr>
+        <td><strong>Apellido y Nombre:</strong> {{ nombre }} {{ apellido }}</td>
+        <td><strong>Legajo:</strong> {{ id_empleado }}</td>
+        <td>
+          <strong>Identificación:</strong> {{ tipo_identificacion }} {{
+          numero_identificacion }}
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Categoría:</strong> {{ categoria }}</td>
+        <td><strong>División:</strong> {{ puesto }}</td>
+        <td><strong>Departamento:</strong> {{ departamento }}</td>
+      </tr>
+      <tr>
+        <td><strong>Fecha Ingreso:</strong> {{ fecha_ingreso }}</td>
+        <td><strong>Sueldo Básico:</strong> ${{ salario_base }}</td>
+        <td><strong>Período:</strong> {{ periodo }}</td>
+      </tr>
+      <tr>
+        <td><strong>Fecha Pago:</strong> {{ fecha_de_pago }}</td>
+        <td><strong>Banco:</strong> {{ banco }}</td>
+        <td><strong>Cuenta:</strong> {{ numero_cuenta }}</td>
+      </tr>
+    </table>
+
+    <div class="subtitulo">Detalle de Conceptos</div>
+
+    <table class="detalle">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Detalle</th>
+          <th class="text-center">Cantidad</th>
+          <th class="text-right">Haberes</th>
+          <th class="text-right">Deducciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for concepto in conceptos %}
+        <tr>
+          <td>{{ concepto.codigo }}</td>
+          <td>{{ concepto.descripcion }}</td>
+          <td class="text-center">{{ concepto.cantidad }}</td>
+          <td class="text-right">{{ concepto.haber }}</td>
+          <td class="text-right">{{ concepto.deduccion }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <table class="totales">
+      <tr class="resaltado">
+        <td><strong>Total Remunerativo:</strong> ${{ sueldo_bruto }}</td>
+        <td><strong>Total No Remun.:</strong> ${{ total_no_remunerativo }}</td>
+        <td><strong>Total Deducciones:</strong> ${{ total_deducciones }}</td>
+      </tr>
+      <tr class="resaltado">
+        <td colspan="2"><strong>Total Neto a Cobrar:</strong></td>
+        <td class="text-right"><strong>${{ sueldo_neto }}</strong></td>
+      </tr>
+    </table>
+
+    <table style="width: 100%; margin-top: 30px; border-collapse: collapse">
+      <tr>
+        <td colspan="2" style="border-top: 1px dashed #000; padding-top: 8px">
+          <strong>Son Pesos:</strong> {{ sueldo_neto_texto }}
+        </td>
+      </tr>
+    </table>
+
+    <table style="width: 100%; margin-top: 20px">
+      <tr>
+        <td style="width: 60%; font-size: 10px; vertical-align: top">
+          El presente es duplicado del recibo original que obra en nuestro poder
+          firmado por el empleado.
+        </td>
+        <td style="text-align: center">
+          <img src="{{ firma_path }}" alt="Firma" style="height: 45px" /><br />
+          <span
+            style="
+              border-top: 1px solid #000;
+              display: inline-block;
+              margin-top: 4px;
+              font-size: 11px;
+            "
+          >
+            Firma del Empleador
+          </span>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
