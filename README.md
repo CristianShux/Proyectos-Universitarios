@@ -480,7 +480,7 @@ Los dashboards fueron desarrollados usando **Metabase**, con filtros por:
 Integración embebida mediante **JWT**, asegurando visualización personalizada por rol.
 
 **Repositorio:**
-[TP Inicial Laboratorio de Construccion de software](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20INICIAL%20LABORATORIO%20DE%20CONSTRUCCION%20DE%20SOFTWARE)
+[TP Inicial Laboratorio de Construccion de software](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20PRINCIPAL%20LABORATORIO%20DE%20CONSTRUCCION%20DE%20SOFTWARE)
 
 
 ---
