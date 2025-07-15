@@ -401,6 +401,84 @@ El modelo fue integrado en una **aplicación web con Django**, permitiendo predi
 **Repositorio:**
 [TP Inicial Laboratorio de Construccion de software](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20INICIAL%20LABORATORIO%20DE%20CONSTRUCCION%20DE%20SOFTWARE)
 
+# TP PRINCIPAL Laboratorio de construccion de software
+
+![Status](https://img.shields.io/badge/status-en%20desarrollo-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Made with](https://img.shields.io/badge/made%20with-React%2C%20FastAPI%2C%20PostgreSQL-ff69b4)
+
+## 📌 Descripción
+
+**Shain Flow** es una solución integral para la gestión de personal, diseñada para automatizar procesos de Recursos Humanos utilizando tecnologías modernas como **reconocimiento facial**, **generación de nómina automática** y **dashboards analíticos interactivos**.
+
+El sistema fue desarrollado como parte del curso de **Administración de Personal (1ºC 2025 - UNGS)**.  
+Mi participación se centró en los roles de **Scrum Master** y **DBA**, además de colaborar en el desarrollo de integraciones entre frontend y backend y en la implementación de dashboards con Metabase.
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+- **Frontend:** React + Vite + TailwindCSS  
+- **Backend:** FastAPI (Python)  
+- **Base de Datos:** PostgreSQL (Neon)  
+- **Visualización de Datos:** Metabase (embedding con JWT)  
+- **Hosting:**
+  - Módulo de Operaciones CRUD-Calculo de nomina:Render
+  - Módulo de Reconocimiento Facial: AWS-EC2
+  - Metabase: AWS-EC2
+  - Frontend: Vercel  
+- **Otros:** JWT, XLSX, FileSaver, Context API, CSS Modules
+
+---
+
+## 🎯 Objetivos del Proyecto
+
+- Gestionar empleados, asistencia biométrica y salarios.
+- Automatizar el cálculo de nómina por tipo y período.
+- Crear dashboards filtrables para análisis de RRHH.
+- Implementar una arquitectura moderna y mantenible.
+- Definir roles y permisos con seguridad granular.
+
+---
+
+## ✨ Características Principales
+
+✅ Gestión completa de empleados (datos personales, laborales, historial)  
+✅ Registro de asistencia con reconocimiento facial y carga manual  
+✅ Generación de jornadas automáticas con días no laborales  
+✅ Registro y visualización de salarios históricos  
+✅ Cálculo de nómina y generación de recibos en PDF / Excel  
+✅ Visualización de métricas con Metabase embebido  
+✅ Roles diferenciados: RRHH, Supervisor, Empleado, analista de datos 
+✅ Envío de correos desde el sistema  
+
+---
+
+## 👥 Roles del Sistema
+
+| Rol                 | Permisos                        |
+|---------------------|----------------------------------|
+| Administrador RRHH  | L, E, X – Control total del sistema |
+| Supervisor          | L, E parcial, X – Aprobaciones y vistas |
+| Empleado            | L, E parcial – Datos propios, recibos |
+| Analista de Datos   | ❌ (excluido del módulo)         |
+
+---
+
+## 📊 Dashboards
+
+Los dashboards fueron desarrollados usando **Metabase**, con filtros por:
+- Empleado
+- Área
+- Periodo
+- Tipo de evento
+
+Integración embebida mediante **JWT**, asegurando visualización personalizada por rol.
+
+**Repositorio:**
+[TP Inicial Laboratorio de Construccion de software](https://github.com/CristianShux/Proyectos-Universitarios/tree/main/TP%20INICIAL%20LABORATORIO%20DE%20CONSTRUCCION%20DE%20SOFTWARE)
+
+
 ---
 
 **Gracias por ver** 👋
