@@ -403,7 +403,7 @@ El modelo fue integrado en una **aplicación web con Django**, permitiendo predi
 
 # TP PRINCIPAL Laboratorio de construccion de software
 
-![Status](https://img.shields.io/badge/status-en%20desarrollo-blue)
+![Status](https://img.shields.io/badge/status-en%20finalizado-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Made with](https://img.shields.io/badge/made%20with-React%2C%20FastAPI%2C%20PostgreSQL-ff69b4)
 
@@ -411,17 +411,21 @@ El modelo fue integrado en una **aplicación web con Django**, permitiendo predi
 
 **Shain Flow** es una solución integral para la gestión de personal, diseñada para automatizar procesos de Recursos Humanos utilizando tecnologías modernas como **reconocimiento facial**, **generación de nómina automática** y **dashboards analíticos interactivos**.
 
-El sistema fue desarrollado como parte del curso de **Administración de Personal (1ºC 2025 - UNGS)**.  
+El sistema fue desarrollado como parte de la materia de **Laboratorio de construccion de software (1ºC 2025 - UNGS)**.  
 Mi participación se centró en los roles de **Scrum Master** y **DBA**, además de colaborar en el desarrollo de integraciones entre frontend y backend y en la implementación de dashboards con Metabase.
 
 ---
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **Frontend:** React + Vite + TailwindCSS  
+- **Frontend:** React + Vite + Typescript + CSS 
 - **Backend:** FastAPI (Python)  
-- **Base de Datos:** PostgreSQL (Neon)  
-- **Visualización de Datos:** Metabase (embedding con JWT)  
+- **Base de Datos:** PostgreSQL (Neon)
+- **Almacenamiento de imagenes y documentos:** Cloudinary 
+- **Visualización de Datos:** Metabase (embedding con JWT)
+- **Gestión del proyecto:** Trello, Jira
+- **Diagramas y diseño:** Db.diagram.io, Figma, Draw.io
+- **Pruebas**: Pytest, Jest
 - **Hosting:**
   - Módulo de Operaciones CRUD-Calculo de nomina:Render
   - Módulo de Reconocimiento Facial: AWS-EC2
@@ -459,9 +463,9 @@ Mi participación se centró en los roles de **Scrum Master** y **DBA**, además
 | Rol                 | Permisos                        |
 |---------------------|----------------------------------|
 | Administrador RRHH  | L, E, X – Control total del sistema |
-| Supervisor          | L, E parcial, X – Aprobaciones y vistas |
-| Empleado            | L, E parcial – Datos propios, recibos |
-| Analista de Datos   | ❌ (excluido del módulo)         |
+| Supervisor          | L, E parcial - Se destaca el cceso a vistas y control de informacion clave de empleados a cargo |
+| Empleado            | L, E parcial – Se centra en los datos propios, visualizacion de recibos e informacion relevante |
+| Analista de Datos   | L, E parcial - Se centra en el analisis interactivo de los datos, posee visualizaciones mas analiticas respecto a la empesa|
 
 ---
 
